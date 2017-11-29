@@ -1,0 +1,90 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="underline_height">1dp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_primary">18sp</dimen>
+    <dimen name="text_size_secondary">16sp</dimen>
+    <dimen name="text_size_info">14sp</dimen>
+    //universal dimens for image
+    <dimen name="imageView_height">150dp</dimen>
+    <dimen name="imageView_width">150dp</dimen>
+
+    <!--common-->
+    <dimen name="value_two">2dp</dimen>
+    <dimen name="value_four">4dp</dimen>
+    <dimen name="value_five">5dp</dimen>
+    <dimen name="value_six">6dp</dimen>
+    <dimen name="value_seven">7dp</dimen>
+    <dimen name="value_eight">8dp</dimen>
+    <dimen name="value_nine">9dp</dimen>
+    <dimen name="value_ten">10dp</dimen>
+    <dimen name="value_twelve">12dp</dimen>
+    <dimen name="value_fifteen">15dp</dimen>
+    <dimen name="value_twenty">20dp</dimen>
+    <dimen name="value_twenty_five">25dp</dimen>
+    <dimen name="value_thirty">30dp</dimen>
+    <dimen name="value_thirty_five">35dp</dimen>
+    <dimen name="value_fourty">40dp</dimen>
+    <dimen name="value_fourty_five">45dp</dimen>
+    <dimen name="value_fifty">50dp</dimen>
+    <dimen name="value_fifty_five">55dp</dimen>
+    <dimen name="value_sixty">60dp</dimen>
+    <dimen name="value_sixty_five">65dp</dimen>
+    <dimen name="value_seventy">70dp</dimen>
+    <dimen name="value_eighty">80dp</dimen>
+    <dimen name="value_eighty_five">85dp</dimen>
+    <dimen name="value_ninety">90dp</dimen>
+    <dimen name="value_hundred">100dp</dimen>
+    <dimen name="value_one_hundred_twenty">120dp</dimen>
+    <dimen name="value_one_hundred_thirty">130dp</dimen>
+    <dimen name="value_one_hundred_fifty">150dp</dimen>
+    <dimen name="value_one_hundred_seventy">170dp</dimen>
+    <dimen name="value_one_hundred_forty">140dp</dimen>
+    <dimen name="value_one_hundred_eighty">180dp</dimen>
+
+    <!--signup-->
+    <dimen name="signup_logo_margin_top">170dp</dimen>
+
+    <!--GeneralFragment-->
+    <dimen name="user_image_height_width">100dp</dimen>
+    <dimen name="margin_text_or">20dp</dimen>
+
+    <!--drawer-->
+    <dimen name="drawer_item_text_size">16sp</dimen>
+
+    <!--Home fragment-->
+    <dimen name="homeFragment_layout_height">100dp</dimen>
+    <!--Recipient DashBoard-->
+    <dimen name="rd_imageView_width">120dp</dimen>
+    <dimen name="rd_imageView_height">@dimen/rd_imageView_width</dimen>
+    <dimen name="rd_icon_width">50dp</dimen>
+    <dimen name="rd_icon_height">@dimen/rd_icon_width</dimen>
+
+    <!--Health Chart-->
+    <dimen name="dhc_title_layout_height">50dp</dimen>
+
+    <!--Add Health Parameter-->
+    <dimen name="ahp_title_layout_height">@dimen/dhc_title_layout_height</dimen>
+
+    <!-- chats-->
+    <dimen name="text_header">18sp</dimen>
+    <dimen name="text_sub_header">16sp</dimen>
+    <dimen name="small_text_size">15sp</dimen>
+    <dimen name="text_size_member_name">12sp</dimen>
+    <dimen name="chat_attach_width">200dp</dimen>
+    <dimen name="chat_attach_height">200dp</dimen>
+    <dimen name="corners_small_value">3dp</dimen>
+
+    <!--Layout More Options-->
+    <dimen name="lmo_imageView_width">5dp</dimen>
+    <dimen name="lmo_imageView_height">@dimen/lmo_imageView_width</dimen>
+
+
+</resources>

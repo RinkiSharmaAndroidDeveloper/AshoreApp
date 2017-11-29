@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/my_communities_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/communities_activities_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_header"
+                android:textColor="@color/color_white"/>
+
+            <ImageView
+                android:id="@+id/new_community_toolbar_plus_icon"
+                android:layout_width="@dimen/value_fifty"
+                android:layout_height="@dimen/value_fifty"
+                android:contentDescription="@string/image_description"
+                android:src="@mipmap/notification_icon"
+                android:layout_gravity="end"
+                android:padding="@dimen/value_fifteen"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_alignParentEnd="true"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+     </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_my_community" />
+
+</LinearLayout>

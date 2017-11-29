@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.trutek.looped.ui.chats.DetailsDialogActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:id="@+id/detail_group_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value_fifteen"
+                android:src="@mipmap/right_arrow_toolbar" />
+            <TextView
+                android:id="@+id/header_create_group_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/group_info"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header" />
+            <TextView
+                android:id="@+id/header_create_group_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/value_twenty"
+                android:text="@string/text_done"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_details_dialog" />
+
+</android.support.design.widget.CoordinatorLayout>

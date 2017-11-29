@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/relative_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_fourty"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:text="@string/text_add_new_medicine_name"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_header" />
+
+        <ImageView
+            android:id="@+id/add_medicine_back_"
+            android:layout_width="@dimen/value_thirty_five"
+            android:layout_height="@dimen/value_thirty_five"
+            android:layout_marginTop="@dimen/value_nine"
+            android:gravity="left"
+            android:padding="@dimen/value_five"
+            android:src="@mipmap/right_arrow_toolbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_medicine_linear_data"
+        android:layout_below="@+id/medicine_name"
+        android:orientation="vertical"
+        android:padding="@dimen/value_fifteen">
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:id="@+id/add_medicine_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_one_hundred_fifty"
+            android:layout_margin="@dimen/value_fifteen"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_camera"
+            app:mask="@drawable/border_rounded_image_medicine"
+            />
+        <EditText
+            android:id="@+id/add_medicine_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_fourty"
+            android:hint="@string/text_medicine_name"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/value_ten"
+            android:textColor="@color/dark_gray" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/primary_text_color" />
+
+        <Spinner
+            android:id="@+id/add_medicine_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_fifty"
+            android:padding="@dimen/value_ten"
+            android:entries="@array/Medicine_Dosage_arrays"
+             />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/primary_text_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_medicine_duration"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/add_medicine_frequncy_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/value_fourty"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/value_ten"
+                android:text="@string/text_frequency_duration"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/value_twenty" />
+
+            <ImageView
+                android:id="@+id/add_medicine_schedule_duration_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/value_five"
+                android:padding="@dimen/value_five"
+                android:src="@mipmap/gray_arrow"
+                android:visibility="visible" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/add_medicine_frequncy_duration"
+                android:background="@color/primary_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_ten"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/add_medicine_duration_frequency">
+        <LinearLayout
+            android:id="@+id/frequency_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_ten"
+            android:background="@drawable/border_rectangular_medicine_info"
+            android:orientation="vertical"
+            android:padding="@dimen/value_fifteen">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/value_six"
+                    android:text="@string/text_medicine_frequency"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_header" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_medicine_per_day_dosage"
+                    android:textSize="@dimen/text_header"
+                    android:textColor="@color/color_white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/value_twenty"
+                    android:layout_toStartOf="@+id/add_medicine_imageView" />
+                <ImageView
+                    android:layout_width="@dimen/value_thirty_five"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:src="@mipmap/left_arrow"
+                    android:gravity="right"
+                    android:padding="@dimen/value_seven"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/add_medicine_imageView" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/toggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_sun"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_ten"
+                    android:text="Sun"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_mon"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Mon"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_tue"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Tue"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_wed"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Wed"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_thu"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:text="Thu"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_fri"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:text="Fri"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/schedule_frequency_sat"
+                    android:layout_width="@dimen/value_seventy"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selected_unselected_radio_button"
+                    android:padding="@dimen/value_eight"
+                    android:text="Sat"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/medicine_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_one_hundred_eighty"
+            android:layout_margin="@dimen/value_ten"
+            android:background="@drawable/border_rectangular_medicine_info"
+            android:orientation="vertical"
+            android:padding="@dimen/value_fifteen">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_color"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/value_six"
+                    android:text="@string/text_medicine_duration"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_header" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_medicine_per_day_week"
+                    android:textSize="@dimen/text_header"
+                    android:textColor="@color/color_white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/value_twenty"
+                    android:layout_toStartOf="@+id/add_medicine_goschedule" />
+                <ImageView
+                    android:layout_width="@dimen/value_thirty_five"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:src="@mipmap/left_arrow"
+                    android:gravity="right"
+                    android:padding="@dimen/value_seven"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/add_medicine_goschedule" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/add_medicine_recycler_medicine_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:layout_below="@+id/edit_medicine_linear_data">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_fifty"
+                android:background="@color/button_color"
+                android:padding="@dimen/value_fifteen"
+                android:text="@string/text_create"
+                android:id="@+id/add_medicine_button_create"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/value_twenty"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/value_five"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2.6"
+            android:layout_margin="@dimen/value_five"
+            android:paddingLeft="@dimen/value_ten"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_name"
+                android:text="User name"
+                android:textSize="@dimen/text_sub_header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile_number"
+                android:layout_marginTop="@dimen/value_ten"
+                android:text="Phone no."
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/value_ten"
+            android:layout_marginEnd="@dimen/value_ten">
+
+            <CheckBox
+                android:layout_width="@dimen/value_fifty"
+                android:layout_height="@dimen/value_fifty"
+                android:id="@+id/check_box_for_select_contact"
+                android:button="@drawable/custom_drawable_checkbox"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

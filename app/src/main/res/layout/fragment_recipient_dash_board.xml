@@ -1,0 +1,286 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/rd_background"
+    android:padding="@dimen/value_ten"
+    tools:context="com.trutek.looped.ui.recipient.RecipientDashBoardFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="you dont have any recipient yet."
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipient_dashboard_cardView_profile">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/value_thirty"
+                    android:layout_marginBottom="@dimen/value_thirty"
+                    android:weightSum="2">
+
+                    <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                        android:layout_width="@dimen/rd_imageView_width"
+                        android:layout_height="@dimen/rd_imageView_height"
+                        android:contentDescription="@string/image_description"
+                        android:id="@+id/recipient_dashboard_imageView_profile_pic"
+                        android:src="@drawable/default_profile_icon"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="@dimen/value_twenty"
+                        android:background="@drawable/border_rounded_corner_image"
+                        app:mask="@drawable/image_mask"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recipient_dashboard_layout_image_profile"
+                        android:layout_alignBottom="@+id/recipient_dashboard_imageView_profile_pic"
+                        android:layout_alignTop="@+id/recipient_dashboard_imageView_profile_pic"
+                        android:layout_alignStart="@+id/recipient_dashboard_imageView_profile_pic"
+                        android:layout_alignEnd="@+id/recipient_dashboard_imageView_profile_pic">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_profile_name"
+                            android:text="Amber"
+                            android:textAllCaps="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/value_ten"
+                            android:layout_marginStart="@dimen/value_twenty"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:textColor="@color/theme_dark"/>
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/value_thirty_five"
+                        android:layout_marginEnd="@dimen/value_twenty"
+                        android:layout_toEndOf="@+id/recipient_dashboard_imageView_profile_pic"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_loop"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:padding="@dimen/value_two"
+                            android:textSize="@dimen/text_size"
+                            style="@style/LoopedActionButtonActive" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_button_provider"
+                            style="@style/LoopedActionButtonDeActive"
+                            android:maxLines="2"
+                            android:padding="@dimen/value_two"
+                            android:ellipsize="end"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginTop="@dimen/value_twenty" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipient_dashboard_cardView_others"
+                android:layout_below="@+id/recipient_dashboard_cardView_profile"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/rd_icon_width"
+                            android:layout_height="@dimen/rd_icon_height"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/recipient_dashboard_imageView_icon_medication"
+                            android:contentDescription="@string/image_description"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:src="@mipmap/icon_medication"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_medication"
+                            android:text="@string/rd_medication"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:padding="@dimen/value_twenty"
+                            android:textColor="@color/primary_text_color"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/underline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/rd_icon_width"
+                            android:layout_height="@dimen/rd_icon_height"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/recipient_dashboard_imageView_icon_tracking"
+                            android:contentDescription="@string/image_description"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:src="@mipmap/icon_tracking"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_tracking"
+                            android:text="@string/rd_tracking"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:padding="@dimen/value_twenty"
+                            android:textColor="@color/primary_text_color"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/underline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/rd_icon_width"
+                            android:layout_height="@dimen/rd_icon_height"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/recipient_dashboard_imageView_icon_budgeting"
+                            android:contentDescription="@string/image_description"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:src="@mipmap/icon_budget"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_budgeting"
+                            android:text="@string/rd_budget"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:padding="@dimen/value_twenty"
+                            android:textColor="@color/primary_text_color"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/underline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/rd_icon_width"
+                            android:layout_height="@dimen/rd_icon_height"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/recipient_dashboard_imageView_icon_notes"
+                            android:contentDescription="@string/image_description"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:src="@mipmap/icon_notes"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_notes"
+                            android:text="@string/rd_notes"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:padding="@dimen/value_twenty"
+                            android:textColor="@color/primary_text_color"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/underline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/rd_icon_width"
+                            android:layout_height="@dimen/rd_icon_height"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/recipient_dashboard_imageView_icon_history"
+                            android:contentDescription="@string/image_description"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:src="@mipmap/icon_history"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recipient_dashboard_textView_history"
+                            android:text="@string/rd_history"
+                            android:textSize="@dimen/text_size_secondary"
+                            android:padding="@dimen/value_twenty"
+                            android:textColor="@color/primary_text_color"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "com.trutek.looped"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 15
+        versionName "4.3.3"
+
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+
+        manifestPlaceholders = [onesignal_app_id               : "f91ddd48-ca5f-4158-9399-ec8f21e0d4ca",
+                                onesignal_google_project_number: "1092026061818"]
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("loopedkey.jks")
+            storePassword KEYSTORE_PASSWORD
+            keyAlias "looped"
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(output.outputFile.parent,
+                            output.outputFile.name.replace("app-release", "looped_v4.3.3"))
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://github.com/QuickBlox/quickblox-android-sdk-releases/raw/master/"
+    }
+}
+
+dependencies {
+
+    apt 'com.google.dagger:dagger-compiler:2.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile "com.quickblox:quickblox-android-sdk-chat:3.3.1"
+    compile "com.quickblox:quickblox-android-sdk-content:3.3.1"
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/cloudinary-android-1.2.2.jar')
+    compile files('libs/cloudinary-core-1.2.2.jar')
+
+    provided 'javax.annotation:jsr250-api:1.0'
+    compile project(path: ':msas')
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'ch.acra:acra:4.6.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:palette-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.16.1'
+    compile 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
+    compile 'com.google.android.gms:play-services-gcm:10.2.1'
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    compile 'com.prolificinteractive:material-calendarview:1.4.2'
+    compile 'com.google.android.gms:play-services-analytics:10.2.1'
+    compile 'com.google.android.gms:play-services-location:10.2.1'
+    compile 'com.google.android.gms:play-services-places:10.2.1'
+
+    compile 'com.google.maps.android:android-maps-utils:0.3+'
+
+
+    compile "com.quickblox:quickblox-android-sdk-messages:3.3.1"
+    compile "com.quickblox:quickblox-android-sdk-customobjects:3.3.1"
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

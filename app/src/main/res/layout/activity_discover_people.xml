@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.trutek.looped.ui.communityDashboard.discoverPeople.DiscoverPeopleActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/text_discover_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/text_discover_people"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_header"
+                android:inputType="textCapWords"
+                android:textColor="@color/color_white"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_ten"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:layout_marginLeft="@dimen/value_four"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search_people_icon"
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:background="@mipmap/search" />
+
+            <EditText
+                android:id="@+id/discover_people_edit_text_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:background="@android:color/transparent"
+                android:hint="@string/text_search_more_people"
+                android:singleLine="true"
+                android:textColorHint="@color/dark_gray"
+                android:textColor="@color/dark_gray"
+                android:textCursorDrawable="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:background="@color/dark_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/discover_people_swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/discover_people_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:background="@color/color_white" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/discover_people_progress_bar"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/value_eighty"
+                android:indeterminateDrawable="@drawable/custom_progress_bar"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

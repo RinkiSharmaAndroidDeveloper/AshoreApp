@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.home.HomeActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten">
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_upcomingEvent_title"
+                        style="@style/HomeFragmentTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_toEndOf="@+id/homeFragment_imageView_upcommingEvent_icon"
+                        android:text="@string/homeFragment_text_upcomingEvent" />
+
+                    <ImageView
+                        android:id="@+id/homeFragment_imageView_upcommingEvent_icon"
+                        android:layout_width="@dimen/value_thirty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/image_description"
+                        android:src="@mipmap/calender_button_unselected"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/homeFragment_recyclerView_upcomingEvent"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginTop="@dimen/value_twenty" />
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_upcomingEvent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/homeFragment_text_notFound_upcomingEvent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten">
+
+                    <ImageView
+                        android:id="@+id/homeFragment_imageView_recentActivity_icon"
+                        android:layout_width="@dimen/value_thirty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:contentDescription="@string/image_description"
+                        android:src="@mipmap/calender_button_unselected"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_recentActivity_title"
+                        style="@style/HomeFragmentTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_toEndOf="@+id/homeFragment_imageView_recentActivity_icon"
+                        android:text="@string/homeFragment_text_recentActivity" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_recentActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/homeFragment_text_notFound_recentActivity" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/homeFragment_recyclerView_recentActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginTop="@dimen/value_twenty" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten">
+
+                    <ImageView
+                        android:id="@+id/homeFragment_imageView_discoverPeople_icon"
+                        android:layout_width="@dimen/value_thirty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:contentDescription="@string/image_description"
+                        android:src="@mipmap/calender_button_unselected"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_discoverPeople_title"
+                        style="@style/HomeFragmentTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_toEndOf="@+id/homeFragment_imageView_discoverPeople_icon"
+                        android:text="@string/homeFragment_text_discoverPeople" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/homeFragment_recyclerView_discoverPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginTop="@dimen/value_twenty" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_recycler_linearLayout_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/homeFragment_textView_discoverPeople"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/homeFragment_text_notFound_discoverPeople" />
+
+                        <TextView
+                            android:id="@+id/layout_recycler_textView_info_second"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_five"
+                            android:gravity="center"
+                            android:text="@string/homeFragment_text_notFound_discoverPeople_inviteFriends"
+                            android:textColor="@color/theme_dark" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten">
+
+                    <ImageView
+                        android:id="@+id/homeFragment_imageView_discoverCommunity_icon"
+                        android:layout_width="@dimen/value_thirty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:contentDescription="@string/image_description"
+                        android:src="@mipmap/calender_button_unselected"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/homeFragment_textView_discoverCommunities_title"
+                        style="@style/HomeFragmentTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_toEndOf="@+id/homeFragment_imageView_discoverCommunity_icon"
+                        android:text="@string/homeFragment_text_discoverCommunities" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/homeFragment_recyclerView_discoverCommunity"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginTop="@dimen/value_twenty" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_recycler_linearLayout_info1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/homeFragment_textView_discoverCommunities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/homeFragment_text_notFound_discoverCommunities" />
+
+                        <TextView
+                            android:id="@+id/layout_recycler_textView_info_second2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_five"
+                            android:gravity="center"
+                            android:text="@string/homeFragment_text_notFound_discoverCommunities_createNew"
+                            android:textColor="@color/theme_dark" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/invite_search_people_background"
+         android:orientation="vertical"
+         android:weightSum="2">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:id="@+id/linear_layout_agenda"
+             android:visibility="invisible">
+
+             <android.support.v7.widget.CardView
+                 android:id="@+id/dashboard_card_view_my_agenda"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 app:cardUseCompatPadding="true"
+                 android:layout_margin="@dimen/value_seven"
+                 app:cardBackgroundColor="@color/color_white">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/text_agenda"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/value_thirty"
+                         android:background="@color/dashboard_title_color"
+                         android:gravity="center"
+                         android:text="@string/text_my_agenda"
+                         android:textColor="@color/color_white"
+                         android:textSize="18sp" />
+                     <TextView
+                         android:id="@+id/txt_any_scheduled_text"
+                         android:gravity="center"
+                         android:layout_marginTop="@dimen/value_ninety"
+                         android:textSize="17sp"
+                         android:inputType="textCapSentences|textMultiLine"
+                         android:text="You don't have any scheduled activities. "
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone"/>
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/dashboard_recycler_view_agenda"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+             </android.support.v7.widget.CardView>
+         </LinearLayout>
+
+         <TextView
+             android:id="@+id/txt_any_scheduled_text3"
+             android:gravity="center_horizontal"
+             android:textSize="17sp"
+             android:text="@string/txt_for_no_activity"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="invisible"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:id="@+id/linear_layout_commnities"
+             >
+
+ &lt;!&ndash;            <android.support.v7.widget.CardView
+                 android:id="@+id/dashboard_card_view_my_family_chat"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="@dimen/value_seven"
+                 app:cardUseCompatPadding="true"
+                 app:cardBackgroundColor="@color/color_white">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/text_family"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/value_thirty_five"
+                         android:background="@color/dashboard_title_color"
+                         android:gravity="center"
+                         android:text="@string/text_my_community"
+                         android:textColor="@color/color_white"
+                         android:textSize="18sp" />
+                     <TextView
+                         android:id="@+id/txt_any_scheduled_text2"
+                         android:gravity="center"
+                         android:layout_marginTop="@dimen/value_ninety"
+                         android:textSize="17sp"
+                         android:inputType="textCapSentences|textMultiLine"
+                         android:text="You don't have any scheduled activities. "
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone"/>&ndash;&gt;
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/dashboard_recycler_view_family"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+
+            &lt;!&ndash;     </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+ &ndash;&gt;
+         </LinearLayout>
+
+     </LinearLayout>-->
+
+</RelativeLayout>

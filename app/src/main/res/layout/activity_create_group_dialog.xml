@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.trutek.looped.ui.chats.CreateGroupDialogActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/header_create_group_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/new_group"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header" />
+            <TextView
+                android:id="@+id/textview_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:text="@string/text_create_small"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header" />
+            <ImageView
+                android:id="@+id/image_view_back"
+                android:layout_width="@dimen/value_twenty_five"
+                android:layout_height="@dimen/value_fifty"
+                android:layout_gravity="center|left"
+                android:src="@mipmap/left_white_arrow"
+                android:text="@string/text_create_small"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_create_group_dialog" />
+
+</android.support.design.widget.CoordinatorLayout>

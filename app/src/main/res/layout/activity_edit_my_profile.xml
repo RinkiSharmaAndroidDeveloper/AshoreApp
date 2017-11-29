@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.home.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <EditText
+                android:id="@+id/edit_txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/text_name"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/color_white"/>
+
+            <ImageView
+                android:id="@+id/image_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/edit_icon"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/value_twenty"/>
+
+            <ImageView
+                android:id="@+id/image_done"
+                android:layout_width="@dimen/value_sixty"
+                android:layout_height="@dimen/value_thirty"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:gravity="center|right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="0dp"
+               android:src="@mipmap/tick_icon"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sub_relativeLayout">
+    <ImageView
+        android:src="@drawable/default_blur_profile_icon"
+        android:id="@+id/image_view_profile_blur_editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+        android:id="@+id/image_view_profile_editProfile"
+        android:layout_width="@dimen/value_ninety"
+        android:layout_height="@dimen/value_ninety"
+        app:mask="@drawable/image_mask"
+        android:background="@drawable/border_rounded_corner_image"
+        android:src="@drawable/default_profile_icon"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/invite_search_people_background"
+            android:orientation="vertical">
+
+            <include
+
+                layout="@layout/edir_profile_about_me_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/edit_profile_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+         <!--   <include
+                layout="@layout/edit_profile_recipients_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+-->
+            <include
+                layout="@layout/edit_profile_my_topics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <include
+                layout="@layout/edit_profile_interested_in_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_joined_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty"
+        android:background="@android:color/transparent"
+        android:weightSum="10"
+        android:layout_marginTop="@dimen/value_fifteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/value_eight"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_weight="3"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                    android:src="@drawable/default_profile_icon"
+                    android:id="@+id/connection_image"
+                    android:layout_width="@dimen/value_fifty"
+                    android:layout_height="@dimen/value_fifty"
+                    android:layout_marginLeft="@dimen/value_ten"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    app:mask="@drawable/rounded_corner_discussion" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/value_five"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/member_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:gravity="center"
+                        android:text="@string/text_sender_name"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dashboard_title_color"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/value_four"
+                android:layout_weight="7"
+                android:gravity="end|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginEnd="@dimen/value_twenty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_admin"
+                    android:textColor="@color/theme_dark"
+                    android:id="@+id/txt_admin"
+                    android:textSize="@dimen/text_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/value_twenty"
+        android:layout_marginRight="@dimen/value_twenty"
+        android:background="@color/dashboard_title_color"/>
+
+</LinearLayout>

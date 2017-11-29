@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_marginBottom="@dimen/value_twenty"
+    tools:context="com.trutek.looped.ui.location.LocationActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:contentDescription="@string/image_description"
+        android:src="@mipmap/location_icon"
+        android:layout_marginTop="@dimen/value_ten"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.55"
+        android:id="@+id/locationActivity_textView_text"
+        android:text="@string/locationActivity_text_location_search"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_primary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.55"
+        android:id="@+id/locationActivity_textView_text_searched"
+        android:text="@string/locationActivity_text"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_primary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationActivity_progressBar"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            style="@style/CustomProgressBar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:layout_marginBottom="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:visibility="gone"
+            android:src="@mipmap/app_icon"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.4"
+        android:visibility="invisible"
+        android:id="@+id/locationActivity_linearLayout_footer">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/locationActivity_button_continue"
+            android:text="@string/locationActivity_button_text"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:layout_marginEnd="@dimen/value_twenty"
+            style="@style/LoopedActionButtonActive"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/locationActivity_textView_change_location"
+            android:text="@string/locationActivity_text_location_change"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_primary"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

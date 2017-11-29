@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.location.SearchLocationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty_five"
+        android:background="@color/header_color"
+        android:id="@+id/searchLocation_relativeLayout_header">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:id="@+id/search_location_imageView_back"
+            android:src="@mipmap/right_arrow_toolbar"
+            android:paddingTop="@dimen/value_twenty"
+            android:paddingBottom="@dimen/value_twenty"
+            android:paddingEnd="@dimen/value_twenty"
+            android:paddingStart="@dimen/value_fifteen"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_location_editText_search"
+            android:hint="Search Cities"
+            android:drawablePadding="@dimen/value_ten"
+            android:layout_margin="@dimen/value_ten"
+            android:drawableLeft="@mipmap/search"
+            android:paddingStart="@dimen/value_ten"
+            android:textCursorDrawable="@color/sub_header_color"
+            android:background="@drawable/border_edit_search_text"
+            android:textColorHint="@color/sub_header_color"
+            android:textColor="@color/sub_header_color"
+            android:layout_toEndOf="@+id/search_location_imageView_back"
+            android:layout_toStartOf="@+id/search_location_imageView_cancel"
+            android:maxLines="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:id="@+id/search_location_imageView_cancel"
+            android:src="@mipmap/icon_cross"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="@dimen/value_twenty"
+            android:paddingBottom="@dimen/value_twenty"
+            android:paddingEnd="@dimen/value_twenty"
+            android:paddingStart="@dimen/value_fifteen"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchLocation_recyclerView"
+        android:layout_below="@+id/searchLocation_relativeLayout_header"
+        android:visibility="visible"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_location_textView_searching"
+        android:text="@string/locationActivity_text_location_search"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_primary"
+        android:layout_below="@+id/searchLocation_relativeLayout_header"
+        android:layout_marginTop="@dimen/value_twenty"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lsearch_location_progressBar"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        style="@style/CustomProgressBar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_seventy"
+        android:background="@color/color_white"
+        android:id="@+id/searchLocation_relativeLayout_header1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/search_location_done_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_fifty"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:layout_marginEnd="@dimen/value_twenty"
+            android:layout_marginBottom="@dimen/value_twenty"
+            android:background="@color/splash_color"
+            android:text="@string/done"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".ui.communityDashboard.myCommunities.display.DisplayCommunity">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:visibility="gone">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/header_color"
+                    android:visibility="gone"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:id="@+id/txt_join"
+                        android:layout_width="@dimen/value_eighty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:background="@color/button_color"
+                        android:gravity="center"
+                        android:text="@string/text_join"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_display_comm_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/text_header" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include
+                layout="@layout/content_display_community"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_fifty">
+
+                <ImageView
+                    android:id="@+id/display_community_imageView_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/image_description"
+                    android:paddingBottom="@dimen/value_fifteen"
+                    android:paddingEnd="@dimen/value_twenty"
+                    android:paddingStart="@dimen/value_fifteen"
+                    android:paddingTop="@dimen/value_fifteen"
+                    android:src="@mipmap/gray_boundry_back_arrow" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    android:id="@+id/display_community_image_edit"
+                    android:src="@mipmap/edit_icon"
+                    android:layout_marginEnd="@dimen/value_ten" />
+                <include
+                    layout="@layout/layout_more_options"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/value_ten" />
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="19dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@color/theme_light"
+                android:src="@mipmap/floating_button"
+                android:visibility="gone"
+                app:backgroundTint="@color/splash_color"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="normal" />
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/display_community_relativeLayout_discussion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/content_discussion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

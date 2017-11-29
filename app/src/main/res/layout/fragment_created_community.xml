@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".ui.communityDashboard.myCommunities.CreatedCommunityFragment">
+
+    <Button
+        android:id="@+id/created_community_button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a New Community"
+        style="@style/LoopedActionButtonActive"
+        android:textSize="@dimen/text_size_secondary"
+        android:layout_marginTop="@dimen/value_twenty"
+        android:layout_marginBottom="@dimen/value_twenty"
+        android:layout_marginStart="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_twenty"
+        />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_recyler"
+        />
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/created_community_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_five"
+        android:layout_marginStart="@dimen/value_five"
+        android:background="@color/color_white" />-->
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/medicine_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_ten"
+        android:background="@drawable/border_rectangular_medicine_info"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_medication_textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/text_medicine_name"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header" />
+
+            <ImageView
+                android:id="@+id/item_medication_edit_medicine"
+                android:layout_width="@dimen/value_thirty_five"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="right"
+                android:padding="@dimen/value_five"
+                android:src="@mipmap/left_arrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/text_medicine_no_preview"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold" />
+
+            <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                android:id="@+id/item_medication_medicine_image"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/value_one_hundred_fifty"
+                android:layout_margin="@dimen/value_fifteen"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_camera"
+                app:mask="@drawable/border_rounded_image_medicine" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_fifteen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_medication_textView_dosages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_medicine_per_day_dosage"
+                android:textSize="@dimen/value_twenty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/edit_medicine_recycler_medicine_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

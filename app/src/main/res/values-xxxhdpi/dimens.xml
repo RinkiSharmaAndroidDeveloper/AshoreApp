@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--signup-->
+    <dimen name="signup_logo_height">210dp</dimen>
+
+    <!--Health Parameters-->
+    <dimen name="hp_title_layout_height">50dp</dimen>
+
+</resources>

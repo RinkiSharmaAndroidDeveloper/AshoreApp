@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/border_rounded_corner_image"
+    android:layout_margin="@dimen/value_thirty"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Needed!"
+        android:id="@+id/textView"
+        android:textSize="@dimen/text_header"
+        android:textColor="@color/color_black"
+        android:layout_marginTop="@dimen/value_ten"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You need to SignUp first"
+        android:id="@+id/textView2"
+        android:layout_marginTop="@dimen/value_five"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_sub_header"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_margin="@dimen/value_twenty"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/layout_main" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/alert_ok_button"
+        android:layout_marginTop="@dimen/value_five"
+        android:textSize="@dimen/value_thirty"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+</LinearLayout>

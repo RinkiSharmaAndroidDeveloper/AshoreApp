@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/settings_card_view_about_me"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_hundred"
+        android:layout_margin="@dimen/value_seven"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/title_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_thirty_five"
+                android:background="@color/dashboard_title_color"
+                android:gravity="center"
+                android:text="@string/text_about_me"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@color/primary_text_color"
+                android:maxLines="5"
+                android:hint="@string/text_write_something_about_yourself"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.communityDashboard.myCommunities.create.CommunityStep1Fragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/discover_layout_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_new_community_step_one_community_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_margin="@dimen/value_ten"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/text_what_kind_of_community"
+                            android:textSize="@dimen/small_text_size"
+                            android:textCursorDrawable="@null"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:background="@color/dark_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_step_one_new_community_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/discover_layout_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/value_four"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/value_twenty"-->
+                        <!--android:layout_height="@dimen/value_twenty"-->
+                        <!--android:layout_marginLeft="@dimen/value_ten"-->
+                        <!--android:layout_marginStart="@dimen/value_ten"-->
+                        <!--android:background="@mipmap/star_icon" />-->
+
+                        <EditText
+                            android:id="@+id/edit_new_community_step_one_community_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_margin="@dimen/value_ten"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/text_what_should_this_community_be_about"
+                            android:textSize="@dimen/small_text_size"
+                            android:textCursorDrawable="@null"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:background="@color/dark_gray"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_step_one_new_community_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_sixty"
+            android:background="@color/color_white"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/create_community_button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:text="@string/text_next"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginRight="@dimen/value_ten"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

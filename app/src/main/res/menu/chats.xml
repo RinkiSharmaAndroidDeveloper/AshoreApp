@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_group"
+        android:title="@string/create_new_group"
+        android:orderInCategory="200"
+        android:icon="@mipmap/group_chat"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/chats"
+        android:title="@string/chats"
+        android:orderInCategory="200"
+        android:icon="@mipmap/create_chat_single"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.recipient.healthchart.DisplayHealthChartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dhc_title_layout_height"
+        android:id="@+id/display_health_chart_relativeLayout_title"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/display_health_chart_imageView_back"
+            android:contentDescription="@string/image_description"
+            android:src="@mipmap/icon_back"
+            android:padding="@dimen/value_fifteen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/display_health_chart_textView_title"
+            android:text="@string/dhc_title_text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_primary"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_health_chart_recyclerView"
+        android:layout_below="@+id/display_health_chart_relativeLayout_title"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/display_health_chart_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/theme_light"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        app:backgroundTint="@color/splash_color"
+        android:src="@mipmap/plus_icon"/>
+
+</RelativeLayout>

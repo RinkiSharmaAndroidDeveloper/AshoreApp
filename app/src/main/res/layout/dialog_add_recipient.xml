@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/dialog_add_recipient_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_ten"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dialog_add_recipient_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_twenty_five"
+            android:gravity="center"
+            android:text="@string/dar_title"
+            android:textColor="@color/color_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_thirty"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_add_recipient_button_new"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_ten"
+            android:background="@color/splash_color"
+            android:gravity="center"
+            android:text="@string/dar_text_new"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dialog_add_recipient_button_existing"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_ten"
+            android:layout_toEndOf="@+id/dialog_add_recipient_button_new"
+            android:background="@drawable/custom_border_skip"
+            android:gravity="center"
+            android:text="@string/dar_text_existing"
+            android:textColor="@color/splash_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_recipient_textView_skip"
+            android:text="@string/dar_text_skip"
+            android:padding="@dimen/value_ten"
+            android:textColor="@color/theme_dark"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:layout_marginBottom="@dimen/value_twenty"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

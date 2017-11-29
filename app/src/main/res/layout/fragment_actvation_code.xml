@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.authenticate.ActvationCodeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activation_layout_activate_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_fifteen"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:layout_marginTop="@dimen/value_thirty"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/activation_image_activate_code"
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty_five"
+                android:layout_marginBottom="@dimen/value_ten"
+                android:background="@mipmap/activatecode_icon"
+                android:contentDescription="@string/text_phoneNumber"
+                android:padding="@dimen/value_four" />
+
+            <EditText
+                android:id="@+id/activation_edit_text_activated_code"
+                android:textCursorDrawable="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_five"
+                android:layout_marginEnd="@dimen/value_thirty"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginRight="@dimen/value_thirty"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_four"
+                android:background="@android:color/transparent"
+                android:hint="@string/text_activate_code"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColorHint="@color/dark_gray"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                android:cursorVisible="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/value_fifteen"
+            android:layout_marginLeft="@dimen/value_fifteen"
+            android:layout_marginRight="@dimen/value_fifteen"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:background="@color/color_light_gray"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/activation_btn_activate"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/value_fifteen"
+            android:layout_marginLeft="@dimen/value_fifteen"
+            android:layout_marginRight="@dimen/value_fifteen"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:background="@color/splash_color"
+            android:text="@string/text_activate"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</FrameLayout>

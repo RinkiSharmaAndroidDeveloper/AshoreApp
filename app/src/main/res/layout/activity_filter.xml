@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.trutek.looped.ui.filter.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:visibility="visible">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/header_color"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/text_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/text_filter"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_five"
+            android:layout_marginLeft="@dimen/value_twenty"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/filter_image_search"
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_marginBottom="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:background="@mipmap/star_icon"
+                    android:contentDescription="@string/text_phoneNumber"
+                    android:padding="@dimen/value_four" />
+
+                <EditText
+                    android:id="@+id/filter_edittext_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_fourty"
+                    android:layout_marginEnd="@dimen/value_thirty"
+                    android:layout_marginLeft="@dimen/value_ten"
+                    android:layout_marginRight="@dimen/value_thirty"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_interest"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_twenty"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_five"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/filter_topics_search"
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_marginBottom="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:background="@mipmap/star_icon"
+                    android:contentDescription="@string/text_phoneNumber"
+                    android:padding="@dimen/value_four" />
+
+                <EditText
+                    android:id="@+id/filter_edittext_topics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_fourty"
+                    android:layout_marginEnd="@dimen/value_thirty"
+                    android:layout_marginLeft="@dimen/value_ten"
+                    android:layout_marginRight="@dimen/value_thirty"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_topics"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_twenty"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_five"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/filter_location_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/location_icon"
+                    android:contentDescription="@string/text_phoneNumber" />
+                <EditText
+                    android:id="@+id/filter_edittext_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_fourty"
+                    android:layout_marginEnd="@dimen/value_thirty"
+                    android:layout_marginLeft="@dimen/value_fifteen"
+                    android:layout_marginRight="@dimen/value_thirty"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_location"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/value_fifteen">
+
+    <Button
+        android:id="@+id/filter_button_show_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color"
+        android:text="@string/text_show_result"
+        android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

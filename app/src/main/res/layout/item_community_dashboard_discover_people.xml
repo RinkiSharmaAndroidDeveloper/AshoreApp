@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+
+    <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+        android:id="@+id/discover_people_imageView_people_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/value_ten"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_placeholder"
+        app:mask="@drawable/border_rounded_corner_image" />
+
+    <ImageView
+        android:id="@+id/discover_people_imageView_join"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/discover_people_imageView_people_image"
+        android:background="@drawable/background_circle_black_transparent"
+        android:contentDescription="@string/image_description"
+        android:padding="5dp"
+        android:src="@mipmap/plus_icon" />
+
+    <TextView
+        android:id="@+id/discover_people_textView_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/discover_people_imageView_people_image"
+        android:layout_alignEnd="@+id/discover_people_imageView_people_image"
+        android:layout_alignStart="@+id/discover_people_imageView_people_image"
+        android:background="@drawable/border_round_corner_textview"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_info"
+        android:maxLines="1"
+        android:text="@string/text_name"
+        android:textColor="@android:color/white" />
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value_fifteen"
+        android:layout_marginStart="@dimen/value_fifteen"
+        android:layout_marginTop="@dimen/value_fifteen"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:id="@+id/image_view_people_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_profile_icon"
+            app:mask="@drawable/border_rounded_corner_image" />
+
+        <TextView
+            android:id="@+id/text_view_people_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_five"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="Name"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:id="@+id/text_view_people_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_thirty_five"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginRight="@dimen/value_ten"
+            android:layout_marginTop="@dimen/value_five"
+            android:background="@drawable/border_button"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="CONNECT"
+            android:textColor="@color/button_color" />
+
+    </LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_sixty"
+        android:background="@android:color/transparent"
+        android:weightSum="3.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_weight=".2"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                    android:id="@+id/image_view_loop"
+                    android:layout_width="@dimen/value_fifty"
+                    android:layout_height="@dimen/value_fifty"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    app:mask="@drawable/border_rounded_corner_image"
+                    android:src="@drawable/default_placeholder"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/value_five"
+                    android:layout_weight="0.08">
+
+                    <TextView
+                        android:id="@+id/loop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:gravity="center"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12">
+
+                <TextView
+                    android:id="@+id/loop_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/color_light_gray"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/value_four"
+                android:layout_weight="3.3"
+                android:gravity="end|center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/value_fifteen"
+                    android:layout_height="@dimen/value_twenty_five"
+                    android:background="@mipmap/right_arrow"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/value_twenty"
+        android:layout_marginRight="@dimen/value_twenty"
+        android:background="@color/dashboard_title_color"/>
+
+</LinearLayout>

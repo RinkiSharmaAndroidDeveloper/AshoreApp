@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_provider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.recipient.ContactProvider">
+
+    <RelativeLayout
+        android:id="@+id/contact_provider"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/header_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/back"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Contact Providers"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/add_contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:padding="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_provider"
+        android:layout_above="@+id/invite_layout_footer"/>
+
+    <RelativeLayout
+        android:id="@+id/invite_layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/invite_done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_color"
+            android:text="@string/done"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

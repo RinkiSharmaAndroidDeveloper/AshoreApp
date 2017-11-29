@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trutek.looped.ui.activity.display.DisplayActivity"
+    tools:showIn="@layout/activity_display">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/community_background"
+            android:paddingLeft="@dimen/value_fifteen"
+            android:paddingRight="@dimen/value_fifteen">
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_five"
+                android:layout_marginLeft="@dimen/value_five"
+                android:layout_marginRight="@dimen/value_five"
+                android:layout_marginStart="@dimen/value_five"
+                android:layout_marginTop="20dp">
+
+                <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                    android:id="@+id/image_view_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_one_hundred_fifty"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_camera"
+                    app:mask="@drawable/roundcorner_imageview_community" />
+
+                <TextView
+                    android:id="@+id/txt_community_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_view_activity"
+                    android:layout_marginBottom="@dimen/value_twenty"
+                    android:layout_marginLeft="@dimen/value_twenty"
+                    android:layout_marginStart="@dimen/value_twenty"
+                    android:background="@android:color/transparent"
+                    android:text="Community Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_sub_header" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_layout"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_sub_header"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_five"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/community_description"
+                            android:textSize="@dimen/small_text_size" />
+
+                        <!--  <TextView
+                              android:id="@+id/text_at"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/small_text_size"
+                              android:text="@string/txt_at"
+                              android:layout_marginLeft="@dimen/value_five"
+                              android:layout_marginStart="@dimen/value_five"
+                              android:textColor="@color/community_description"/>-->
+
+                        <TextView
+                            android:id="@+id/activity_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_five"
+                            android:layout_marginStart="@dimen/value_five"
+                            android:textColor="@color/community_description"
+                            android:textSize="@dimen/small_text_size" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/activity_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_five"
+                        android:textColor="@color/community_description"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_five"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_hosted_by"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_hosted_by"
+                            android:textColor="@color/community_description"
+                            android:textSize="@dimen/small_text_size" />
+
+                        <TextView
+                            android:id="@+id/hosted_by_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_five"
+                            android:layout_marginStart="@dimen/value_five"
+                            android:textColor="@color/theme_dark"
+                            android:textSize="@dimen/small_text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_twenty"
+                    android:layout_weight="1.5"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/txt_join"
+                        android:layout_width="@dimen/value_eighty"
+                        android:layout_height="@dimen/value_thirty"
+                        android:background="@color/button_color"
+                        android:gravity="center"
+                        android:text="@string/text_join"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_activity_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_details_layout"
+                android:layout_marginBottom="@dimen/value_twenty"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:textColor="@color/community_description"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:id="@+id/attending_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_activity_description"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_community_member"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/value_thirty"
+                            android:background="@color/cardview_dark_background"
+                            android:gravity="center"
+                            android:text="Attending"
+                            android:textAllCaps="true"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_sub_header" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9.9">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycler_view_activity_member"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/value_ten"
+                                    android:layout_marginRight="@dimen/value_ten" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".1">
+
+                                <ImageView
+                                    android:id="@+id/image_view_right_arrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/value_four"
+                                    android:layout_marginLeft="@dimen/value_four"
+                                    android:layout_marginRight="@dimen/value_four"
+                                    android:layout_marginStart="@dimen/value_four"
+                                    android:src="@mipmap/rightarrow" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_display_activity_linearLayout_discussion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attending_layout"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/content_discussion"/>
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                       &lt;!&ndash; <TextView
+                            android:id="@+id/txt_community_discussion"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/value_thirty"
+                            android:background="@color/cardview_dark_background"
+                            android:gravity="center"
+                            android:text="@string/title_discussions"
+                            android:textAllCaps="true"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_sub_header" />&ndash;&gt;
+
+
+
+                       &lt;!&ndash; <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view_activity_discussion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/value_ten"
+                            android:layout_marginRight="@dimen/value_ten" />
+
+                        <TextView
+                            android:id="@+id/txt_show_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_ten"
+                            android:gravity="center"
+                            android:text="VIEW ALL"
+                            android:textColor="@color/theme_dark"
+                            android:textSize="@dimen/text_sub_header"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_open_discussion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Start Discussion"
+                            android:visibility="gone" />&ndash;&gt;
+
+                    </LinearLayout>-->
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="LoopedActionButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LoopedActionButtonActive" parent="LoopedActionButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/category_color_second</item>
+    </style>
+
+    <style name="LoopedActionButtonDeActive" parent="LoopedActionButton">
+        <item name="android:textColor">@color/splash_color</item>
+        <item name="android:background">@drawable/custom_border_skip</item>
+    </style>
+
+    <style name="customAlertDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/drawer_item_text_size</item>
+    </style>
+
+    <style name="TextAppearance.Widget.ActionBar.Title" parent="@android:style/TextAppearance.Medium"/>
+
+    <style name="TextAppearance.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Small"/>
+
+    <style name="Theme.MyToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="homeAsUpIndicator">@mipmap/right_arrow_toolbar</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="@android:style/Widget.Holo.ProgressBar.Large">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:maxWidth">50dp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="colorPrimary">@color/theme_light</item>
+        <item name="colorAccent">@color/theme_light</item>
+    </style>
+
+
+    <style name="HomeFragmentTitles" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/theme_light</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+    </style>
+
+    <style name="styleTabText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

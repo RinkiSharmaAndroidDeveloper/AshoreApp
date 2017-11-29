@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layout_make_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginRight="@dimen/value_ten"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:background="@android:color/transparent"
+                android:hint="@string/text_event_title"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_black" />
+
+            <EditText
+                android:id="@+id/edit_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:background="@android:color/transparent"
+                android:textColor="@color/primary_text_color"
+                android:hint="@string/text_event_description"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/value_sixty"
+                android:background="@color/color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_weight="0.55">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/edit_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/text_date_and_time"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/primary_text_color"
+                            android:gravity="center_vertical"/>
+
+
+                        <TextView
+                            android:id="@+id/edit_date_time_devider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:textSize="@dimen/small_text_size"
+                            android:text=":"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/edit_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/value_ten"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:textColor="@color/primary_text_color"
+                            android:background="@android:color/transparent"
+                            android:textSize="@dimen/small_text_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.45"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/create_event_calender_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/calender_button_unselected" />
+
+                    <ImageView
+                        android:id="@+id/create_event_time_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:background="@mipmap/clock_button_unselected" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_weight="0.55">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/location_icon" />
+
+                        <TextView
+                            android:id="@+id/create_event_text_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/value_ten"
+                            android:layout_marginEnd="@dimen/value_ten"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/text_Enter_city_state_or_zip_code"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/small_text_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.45"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/create_event_private_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/detect_icon_unselected" />
+
+                    <ImageView
+                        android:id="@+id/create_event_global_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:background="@mipmap/earth_button_unselected" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_three_community_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_fifteen"
+                android:layout_marginTop="@dimen/value_fifteen"
+                android:background="@color/button_color"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2">
+
+                    <TextView
+                        android:id="@+id/create_event_invite_guests"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_fourty_five"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="@dimen/value_twenty"
+                        android:gravity="center|start"
+                        android:text="@string/text_invite_guests"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8">
+
+                    <ImageView
+                        android:id="@+id/create_event_invite_plus_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/value_twenty"
+                        android:src="@mipmap/plus_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

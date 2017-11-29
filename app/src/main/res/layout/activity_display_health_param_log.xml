@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.recipient.healthparameter.DisplayHealthParamLogActivity">
+
+    <RelativeLayout
+        android:id="@+id/dhpl_relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dhc_title_layout_height"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/dhpl_imageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:padding="@dimen/value_fifteen"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/dhpl_textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/dhc_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_primary" />
+
+        <ImageView
+            android:id="@+id/dhpl_imageView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/value_fifteen"
+            android:contentDescription="@string/image_description"
+            android:padding="@dimen/value_eight"
+            android:src="@mipmap/icon_del" />
+
+    </RelativeLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dhpl_materialCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dhpl_relativeLayout_title"
+        android:layout_marginBottom="-35dp"
+        app:mcv_selectionColor="@color/theme_dark"
+        app:mcv_tileHeight="40dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dhpl_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dhpl_materialCalendarView">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/display_health_param_log_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/theme_light"
+        android:src="@mipmap/plus_icon"
+        app:backgroundTint="@color/splash_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+
+</RelativeLayout>

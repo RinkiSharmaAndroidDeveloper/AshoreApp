@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/list_community_dashboard_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_sixty"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="3.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginStart="@dimen/value_ten"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+            <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                android:src="@drawable/default_profile_icon"
+                android:id="@+id/loop_contact_image"
+                android:layout_width="@dimen/value_fourty"
+                android:layout_height="@dimen/value_fourty"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:mask="@drawable/rounded_corner_discussion"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/value_five"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/list_community_dashboard_sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="@dimen/value_ten"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:gravity="center"
+                    android:text="@string/text_sender_name"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="end|center"
+            android:layout_marginEnd="@dimen/value_fifteen"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_marginEnd="@dimen/value_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:id="@+id/invite_from_loop_checkBox"
+                android:button="@drawable/selected_unselected_radio_button"/>
+
+            <!--<TextView
+                android:id="@+id/from_loop_text_invite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_fourty"
+                android:background="@drawable/border_rounded_corner_image"
+                android:text="@string/text_invite"
+                android:textColor="@color/splash_color"
+                android:layout_gravity="center"
+                android:gravity="center"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dashboard_title_color">
+    </LinearLayout>
+
+</LinearLayout>

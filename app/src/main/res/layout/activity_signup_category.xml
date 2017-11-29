@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value_fifteen"
+            android:id="@+id/category_back"
+            android:src="@mipmap/right_arrow_toolbar" />
+
+        <TextView
+            android:id="@+id/textView_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="@string/category"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_header" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/category_next"
+            android:layout_alignParentEnd="true"
+            android:text="@string/text_next"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_info"
+            android:paddingEnd="@dimen/value_twenty"
+            android:paddingStart="0dp"
+            android:textAllCaps="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/textView_category"
+        android:layout_marginTop="@dimen/value_thirty"
+        android:text="@string/text_category_start"
+        android:textSize="@dimen/value_twenty" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/value_twenty"
+        android:id="@+id/signup_category_fragment"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/settings_card_view_my_topics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/value_seven"
+        android:layout_marginLeft="@dimen/value_seven"
+        android:layout_marginRight="@dimen/value_seven"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_thirty_five"
+            android:background="@color/dashboard_title_color"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_marginLeft="@dimen/value_fifteen"
+                android:layout_weight=".3"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/edit_profile_title_my_topics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:layout_gravity="center"
+                    android:background="@color/dashboard_title_color"
+                    android:gravity="center"
+                    android:text="@string/text_looped_for"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_my_topics_plus_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_weight="1.7"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/my_topics_image_plus_icon"
+                    android:layout_width="@dimen/value_thirty"
+                    android:layout_height="@dimen/value_twenty_five"
+                    android:background="@mipmap/green_plus_icon"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/edit_profile_recycler_view_topics"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/edit_text_interest_search">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

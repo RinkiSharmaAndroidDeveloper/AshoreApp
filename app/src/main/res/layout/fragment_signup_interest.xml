@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true" />
+
+    <EditText
+        android:id="@+id/interest_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fourty"
+        android:background="@drawable/border_edit_search_text"
+        android:drawableStart="@mipmap/search"
+        android:drawablePadding="10dp"
+        android:visibility="gone"
+        android:hint="@string/search"
+        android:paddingStart="@dimen/value_ten"
+        android:layout_marginStart="@dimen/value_five"
+        android:layout_marginEnd="@dimen/value_five"
+        android:paddingEnd="0dp"
+        android:textSize="@dimen/text_size_primary"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/signup_interest_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/value_hundred"
+        android:layout_height="@dimen/value_hundred"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/value_eighty"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone" />
+
+
+</LinearLayout>

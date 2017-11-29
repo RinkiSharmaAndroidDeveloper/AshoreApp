@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/value_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                android:layout_marginLeft="@dimen/value_ten"
+                android:id="@+id/profile_pic_icon_notification"
+                android:layout_width="@dimen/value_fifty"
+                android:layout_height="@dimen/value_fifty"
+                android:scaleType="centerCrop"
+                app:mask="@drawable/image_mask"
+                android:background="@drawable/border_rounded_corner_image"
+                android:src="@drawable/default_profile_icon" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/value_fifteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notification_txt_title"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/notification_txt_accept"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Accept"
+                        android:textAlignment="center"
+                        android:background="@drawable/notification_button1"
+                        android:textColor="@color/button_color"
+                        android:layout_marginRight="@dimen/value_twenty"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="@dimen/value_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="6"
+                    android:gravity="start">
+                    <TextView
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:id="@+id/notification_txt_cancel"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Ignore"
+                        android:textAlignment="center"
+                        android:background="@drawable/notification_button2"
+                        android:textColor="@color/red"
+                        android:layout_marginRight="@dimen/value_twenty"/>
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/value_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/txtRec2" />
+    </LinearLayout>
+
+</RelativeLayout>

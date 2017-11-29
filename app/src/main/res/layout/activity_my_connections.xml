@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.trutek.looped.ui.communityDashboard.discoverPeople.DiscoverPeopleActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/text_my_connections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:text="@string/text_my_connection"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@color/color_light_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/value_twenty"
+            android:layout_marginEnd="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_ten"
+            android:background="@android:drawable/editbox_background">
+
+            <EditText
+                android:id="@+id/my_connection_editText_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_search_more_people"
+                android:drawableStart="@mipmap/search"
+                android:background="@null"
+                android:padding="@dimen/value_five"
+                android:drawablePadding="@dimen/value_five"
+                android:textColorHint="@android:color/darker_gray"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_five"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@+id/my_connection_textView_discoverPeople_title"
+                style="@style/HomeFragmentTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:text="@string/homeFragment_text_discoverPeople" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@android:color/white">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_connection_recyclerView_discoverPeople"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_twenty" />
+
+            <ProgressBar
+                android:id="@+id/my_connection_progress_bar_discover"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/custom_progress_bar"
+                android:visibility="gone" />
+            <LinearLayout
+                android:id="@+id/layout_recycler_linearLayout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_connection_textView_discoverPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/homeFragment_text_notFound_discoverPeople" />
+
+                <TextView
+                    android:id="@+id/layout_recycler_textView_info_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:gravity="center"
+                    android:text="@string/homeFragment_text_notFound_discoverPeople_inviteFriends"
+                    android:textColor="@color/theme_dark" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_five"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/my_connections_textView_connection_title"
+                style="@style/HomeFragmentTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:text="@string/text_connection" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_connections_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:layout_below="@+id/my_connections_textView_connection_title"/>
+
+            <ProgressBar
+                android:id="@+id/my_connection_progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/custom_progress_bar"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/my_connection_textView_connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/value_thirty"
+                android:layout_marginEnd="@dimen/value_twenty"
+                android:visibility="visible"
+                android:text="@string/homeFragment_text_notFound_connection" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

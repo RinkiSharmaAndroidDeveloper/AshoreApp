@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trutek.looped.ui.profile.display.DisplayProfile"
+    tools:showIn="@layout/activity_display_profile">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sub_relativeLayout">
+    <ImageView
+        android:src="@drawable/default_blur_profile_icon"
+        android:id="@+id/image_view_profile_blur"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+        android:id="@+id/image_view_profile"
+        android:layout_width="@dimen/value_ninety"
+        android:layout_height="@dimen/value_ninety"
+        app:mask="@drawable/image_mask"
+        android:background="@drawable/border_rounded_corner_image"
+        android:src="@drawable/default_profile_icon"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sub_relativeLayout"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <!--        <TextView
+                android:id="@+id/Disp_Profile_tMember"
+                android:textAllCaps="true"
+                android:text="@string/text_about_me"
+                android:textSize="@dimen/text_sub_header"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_thirty"
+                android:background="@color/cardview_dark_background" />
+
+            <TextView
+                android:gravity="top"
+                android:id="@+id/txt_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="5"/>
+
+            <TextView
+                android:id="@+id/Disp_Profile_Detail"
+                android:textAllCaps="true"
+                android:text="@string/text_details"
+                android:textSize="@dimen/text_sub_header"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/cardview_dark_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:layout_marginBottom="@dimen/value_twenty"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/gender_icon"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_gender"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:gravity="center_vertical"
+                        android:id="@+id/txt_gender"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imdob"
+                        android:src="@mipmap/birthday_icon"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/value_ten"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:text="@string/text_age"
+                        android:gravity="center_vertical"
+                        android:id="@+id/txt_date_of_birth"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imloc"
+                        android:src="@mipmap/location_icon"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/value_five"
+                        android:layout_marginStart="@dimen/value_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_location"
+                        android:gravity="center_vertical"
+                        android:id="@+id/txt_location"/>
+
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <include
+                layout="@layout/edir_profile_about_me_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/edit_profile_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/edit_profile_my_topics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <include
+                layout="@layout/edit_profile_interested_in_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/value_one_hundred_fifty"
+        android:indeterminateDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

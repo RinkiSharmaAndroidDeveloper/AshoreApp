@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.display.discussion.DiscussionActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/discussion_activity_imageView_back"
+                android:contentDescription="@string/image_description"
+                android:src="@mipmap/icon_back"
+                android:visibility="gone"
+                android:paddingTop="@dimen/value_fifteen"
+                android:paddingBottom="@dimen/value_fifteen"
+                android:paddingStart="@dimen/value_five"
+                android:paddingEnd="@dimen/value_fifteen"
+                />
+
+            <TextView
+                android:text="@string/title_discussions"
+                android:textColor="@color/color_white"
+                android:layout_gravity="center"
+                android:id="@+id/discussion_activity_textView_title"
+                android:textSize="@dimen/text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_discussion" />
+
+</android.support.design.widget.CoordinatorLayout>

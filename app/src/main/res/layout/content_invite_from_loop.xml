@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trutek.looped.ui.recipient.recipient.loops.InviteFromLoopActivity"
+    tools:showIn="@layout/activity_invite_from_loop">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_from_loop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:layout_above="@+id/bottom_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_sixty"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/text_done"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginRight="@dimen/value_ten"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

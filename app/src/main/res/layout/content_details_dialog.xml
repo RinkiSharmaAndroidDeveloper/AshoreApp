@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trutek.looped.ui.chats.DetailsDialogActivity"
+    tools:showIn="@layout/activity_details_dialog">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_gray"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_fifteen">
+
+        <ImageView
+            android:id="@+id/iv_group_image"
+            android:layout_width="@dimen/value_hundred"
+            android:layout_height="@dimen/value_hundred"
+            android:background="@drawable/border_rounded_corner_image"
+            android:padding="@dimen/value_thirty"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/create_group_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/group_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_thirty"
+                android:background="@android:color/transparent"
+                android:hint="@string/create_group_group_name"
+                android:maxLines="3"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_sub_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginRight="@dimen/value_five"
+                android:layout_marginTop="@dimen/value_five"
+                android:background="@color/dashboard_title_color"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+
+                android:layout_margin="@dimen/value_ten"
+                android:text="@string/provide_icon_name_group" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_new_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginBottom="@dimen/value_ten"
+        android:layout_marginStart="@dimen/value_fifteen"
+        android:layout_marginTop="@dimen/value_ten"
+        android:text="@string/cht_add_new_member"
+        android:textSize="@dimen/text_header"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_new_member"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

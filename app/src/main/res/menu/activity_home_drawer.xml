@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/drawer_text_home" />
+
+    <item
+        android:id="@+id/nav_community"
+        android:title="@string/drawer_text_community_dashboard"/>
+    <item
+        android:id="@+id/nav_connection"
+        android:title="@string/drawer_text_connections_dashboard"/>
+    <item
+        android:id="@+id/nav_planner"
+        android:title="@string/drawer_text_planner"/>
+    <item
+        android:id="@+id/nav_chats"
+        android:title="@string/drawer_text_chats"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/drawer_text_settings"/>
+    <item
+        android:id="@+id/nav_log_out"
+        android:title="@string/drawer_text_log_out"/>
+
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/value_ten"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_ten"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+                android:src="@drawable/default_placeholder"
+                android:id="@+id/layout_discussion_image_profile_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                app:mask="@drawable/rounded_corner_discussion"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discussion_activity_linear_layout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:baselineAligned="false"
+                    >
+
+                    <TextView
+                        android:id="@+id/layout_discussion_txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_user_name"
+                        android:textSize="@dimen/text_header"
+                        android:textColor="@color/chat_header_color"
+                        android:layout_toStartOf="@+id/layout_discussion_txt_time"
+                        android:layout_marginEnd="@dimen/value_ten"
+                        android:ellipsize="end"
+                        />
+
+                    <TextView
+                        android:id="@+id/layout_discussion_txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6:35 PM"
+                        android:layout_toStartOf="@+id/discussion_activity_select_starred_message"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/value_twenty"
+                        android:layout_height="@dimen/value_twenty"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:contentDescription="@string/image_description"
+                        android:visibility="visible"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/value_twenty"
+                        android:id="@+id/discussion_activity_select_starred_message"
+                        android:src="@mipmap/star_icon"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/layout_discussion_txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/text_size_secondary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_discussion_textView_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reply"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginStart="@dimen/value_twenty_five"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_discussion_textView_replies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment_text_replies"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_marginEnd="@dimen/value_twenty_five"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_discussion_linearLayout_sunComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/item_discussion_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_twenty_five"
+                    android:layout_marginEnd="@dimen/value_twenty_five"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/item_discussion_progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/CustomProgressBar"
+
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            android:layout_marginStart="@dimen/value_ten"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:layout_marginTop="@dimen/value_ten"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

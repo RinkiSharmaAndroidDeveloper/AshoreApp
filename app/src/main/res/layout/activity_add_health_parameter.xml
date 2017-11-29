@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trutek.looped.ui.recipient.healthparameter.AddHealthParameterActivity">
+
+    <RelativeLayout
+        android:id="@+id/add_health_parameter_relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ahp_title_layout_height"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/add_health_parameter_imageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:padding="@dimen/value_fifteen"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/add_health_parameter_textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/ahp_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_primary" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_health_parameter_linearLayout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_health_parameter_relativeLayout_title"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/value_twenty"
+            android:layout_height="@dimen/value_twenty"
+            android:layout_margin="@dimen/value_ten"
+            android:background="@mipmap/star_icon"
+            android:contentDescription="@string/image_description" />
+
+
+        <EditText
+            android:id="@+id/add_health_parameter_topic_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_gray"
+            android:hint="@string/looped_for"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/add_health_parameter_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/value_twenty"
+        android:layout_below="@+id/add_health_parameter_linearLayout_search" />
+
+</RelativeLayout>
+

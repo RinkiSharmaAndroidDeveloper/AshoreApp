@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.create.CreateProfileStep2Activity">
+
+    <LinearLayout
+        android:id="@+id/step_three_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@mipmap/create_profle_step_3"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/invite_layout_footer"
+        android:layout_below="@+id/step_three_header_layout">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_fifty"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/value_thirty"
+                    android:layout_height="@dimen/value_thirty"
+                    android:layout_margin="@dimen/value_ten"
+                    android:background="@mipmap/star_icon" />
+
+                <EditText
+                    android:id="@+id/edit_text_contact_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/search"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/dark_gray"
+                    android:textColor="@color/dark_gray"
+                    android:backgroundTint="@color/dark_gray"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_invite_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="41dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invite_layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/invite_done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/done"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

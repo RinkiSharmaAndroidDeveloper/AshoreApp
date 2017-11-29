@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activity.display.discussion.DiscussionActivity"
+    tools:showIn="@layout/activity_discussion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/value_ten"
+        android:layout_marginRight="@dimen/value_ten"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/content_discussion_linearLayout_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/discussion_activity_textView_discussion_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_discussions"
+                android:textSize="@dimen/text_size_primary"
+                android:layout_weight="0.3"
+                android:layout_marginStart="@dimen/value_twenty"
+                style="@style/HomeFragmentTitles"
+                />
+
+            <TextView
+                android:id="@+id/discussion_activity_textView_show_discussion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/discussion_text_seeAll"
+                android:layout_weight="1.7"
+                android:gravity="center"
+                android:textSize="8sp"
+                style="@style/HomeFragmentTitles"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_discussion_linearLayout_addComment_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/content_discussion_imageView_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image_description"
+                    android:background="@mipmap/description_icon"/>
+
+                <com.trutek.looped.ui.customcontrol.CustomEditText
+                    android:id="@+id/edit_text_discussion_activity_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/value_hundred"
+                    android:gravity="top"
+                    android:imeOptions="actionSend"
+                    android:hint="What's up"
+                    android:paddingTop="@dimen/value_ten"
+                    android:textColorHint="@color/dark_gray"
+                    android:textColor="@color/dark_gray"
+                    android:maxLines="3"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/underline_height"
+                android:background="@color/underline"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/content_discussion_linearLayout_addComment_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_ten"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_edit_discussion_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@mipmap/description_icon"/>
+
+            <com.trutek.looped.ui.customcontrol.CustomEditText
+                android:id="@+id/edit_text_discussion_activity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_fifty"
+                android:gravity="center"
+                android:imeOptions="actionSend"
+                android:hint="Add a Comment"
+                android:textColorHint="@color/dark_gray"
+                android:textColor="@color/color_black"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/border_background_grey"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/content_description_button_reply"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:text="@string/discussion_activity_text_comment"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:textColor="@color/color_white"/>
+
+        <ProgressBar
+            android:id="@+id/content_discussion_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/CustomProgressBar"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/content_discussion_textView_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have any comments."
+            android:textSize="@dimen/text_size_primary"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:layout_marginBottom="@dimen/value_twenty"
+            android:visibility="gone"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_discussion_activity"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

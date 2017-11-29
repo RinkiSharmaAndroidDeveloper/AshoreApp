@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/header_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:text="@string/text_medication"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_header"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/medication_backword_image"
+                android:layout_width="@dimen/value_thirty_five"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/value_nine"
+                android:gravity="center"
+                android:padding="@dimen/value_five"
+                android:src="@mipmap/right_arrow_toolbar" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_ten"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/medication_calendar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/value_thirty_five"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:inputType="textCapWords"
+                android:text=""
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_header" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/medication_recycler_medicine_dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/theme_light"
+        android:src="@mipmap/floating_button"
+        app:backgroundTint="@color/splash_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+</android.support.design.widget.CoordinatorLayout>

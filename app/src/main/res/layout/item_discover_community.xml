@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_four"
+        android:layout_marginLeft="@dimen/value_ten">
+
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:id="@+id/image_view_community_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:mask="@drawable/border_rounded_corner_image"
+            android:src="@drawable/default_placeholder" />
+
+        <TextView
+            android:id="@+id/text_view_community_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_community_image"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="Name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_community_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_community_name"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="Work" />
+
+        <TextView
+            android:id="@+id/text_view_people_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_community_desc"
+            android:background="@drawable/border_button"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="JOIN"
+            android:textColor="@color/button_color" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

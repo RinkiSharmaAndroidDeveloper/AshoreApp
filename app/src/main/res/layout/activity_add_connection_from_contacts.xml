@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/contacts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value_fifteen"
+            android:src="@mipmap/right_arrow_toolbar" />
+
+        <TextView
+            android:id="@+id/interest_textView_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="@string/text_connection_contact"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_header" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/load_contacts_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

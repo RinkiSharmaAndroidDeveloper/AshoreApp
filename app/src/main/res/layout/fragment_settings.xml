@@ -1,0 +1,374 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    tools:context="com.trutek.looped.ui.settings.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/header_color">
+
+                        <TextView
+                            android:id="@+id/text_media"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/value_five"
+                            android:gravity="center"
+                            android:text="@string/text_media"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_sub_header" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10"
+                        android:layout_marginTop="@dimen/value_five"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5">
+
+                            <TextView
+                                android:id="@+id/text_auto_download"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/text_auto_download"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/color_black"
+                                android:layout_marginStart="@dimen/value_ten"
+                                android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.5"
+                            android:layout_marginEnd="@dimen/value_five">
+
+                            <ToggleButton
+                                android:id="@+id/toggle_auto_download"
+                                android:layout_width="70dp"
+                                android:layout_height="@dimen/value_fourty"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5">
+
+                            <TextView
+                                android:id="@+id/text_save_gallery"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/text_save_to_gallery"
+                                android:textSize="@dimen/text_size"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/color_black"
+                                android:layout_marginStart="@dimen/value_ten"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.5"
+                            android:layout_marginEnd="@dimen/value_five">
+
+                            <ToggleButton
+                                android:id="@+id/toggle_save_gallery"
+                                android:layout_width="70dp"
+                                android:layout_height="@dimen/value_fourty"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_Reminders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/header_color">
+
+                        <TextView
+                            android:id="@+id/text_reminder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/value_five"
+                            android:gravity="center"
+                            android:text="@string/text_reminders"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_sub_header" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5">
+
+                            <TextView
+                                android:id="@+id/text_medicine"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/text_medicine"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/color_black"
+                                android:layout_marginStart="@dimen/value_ten"
+                                android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.5"
+                            android:layout_marginEnd="@dimen/value_five">
+
+                            <ToggleButton
+                                android:id="@+id/toggle_medicine"
+                                android:layout_width="70dp"
+                                android:layout_height="@dimen/value_fourty"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5">
+
+                            <TextView
+                                android:id="@+id/text_planner_event"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/text_planner_event"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/color_black"
+                                android:layout_marginStart="@dimen/value_ten"
+                                android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.5"
+                            android:layout_marginEnd="@dimen/value_five">
+
+                            <ToggleButton
+                                android:id="@+id/toggle_planner_event"
+                                android:layout_width="70dp"
+                                android:layout_height="@dimen/value_fourty"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_alert_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_ten"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/header_color">
+
+                        <TextView
+                            android:id="@+id/text_alert_notification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/value_five"
+                            android:gravity="center"
+                            android:text="@string/text_alert_notification"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_sub_header" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10"
+                        android:layout_marginTop="@dimen/value_five"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5">
+
+                            <TextView
+                                android:id="@+id/text_sound"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/text_sound"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/color_black"
+                                android:layout_marginStart="@dimen/value_ten"
+                                android:gravity="center_vertical"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.5"
+                            android:layout_marginEnd="@dimen/value_five">
+
+                            <ToggleButton
+                                android:id="@+id/toggle_sound"
+                                android:layout_width="70dp"
+                                android:layout_height="@dimen/value_fourty"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_report_bug"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_sixty"
+                android:layout_margin="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/text_report_bug"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_report_bug"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_sub_header" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_term_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_sixty"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/text_term_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_term_condition"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_sub_header" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_about_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_sixty"
+                android:layout_margin="@dimen/value_ten"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/text_about_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_about_help"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_sub_header" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

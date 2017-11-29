@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_fourty"
+        android:id="@+id/checkbox_interest_item1"
+        android:text="1"
+        android:textColor="@color/theme_dark"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/border_rounded_corner_image"
+        android:layout_marginLeft="@dimen/value_twenty"
+        android:layout_marginStart="@dimen/value_twenty"
+        android:layout_marginRight="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_twenty"
+        android:layout_marginTop="@dimen/value_ten"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_fourty"
+        android:id="@+id/checkbox_interest_item2"
+        android:text="2"
+        android:textColor="@color/theme_dark"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/border_rounded_corner_image"
+        android:layout_marginRight="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_twenty"
+        android:layout_marginTop="@dimen/value_ten"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_fourty"
+        android:id="@+id/checkbox_interest_item3"
+        android:text="3"
+        android:textColor="@color/theme_dark"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/border_rounded_corner_image"
+        android:layout_marginRight="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_twenty"
+        android:layout_marginTop="@dimen/value_ten"
+        android:visibility="gone"/>
+
+</LinearLayout>

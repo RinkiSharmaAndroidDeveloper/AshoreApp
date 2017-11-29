@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_color"
+    android:orientation="vertical"
+    tools:context=".ui.authenticate.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_fifty"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/signup_logo"
+            android:layout_width="@dimen/value_hundred"
+            android:layout_height="@dimen/value_hundred"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_fifty"
+            android:background="@mipmap/createaccount_logo"
+            android:contentDescription="@string/text_signup" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/signup_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_fifty"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/value_eighty"
+            android:layout_marginLeft="@dimen/value_twenty"
+            android:layout_marginRight="@dimen/value_twenty"
+            android:background="@color/color_white"
+            android:text="@string/lets_get_started"
+            android:textColor="@color/splash_color"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/signup_location_login_already"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/value_fourty"
+            android:layout_marginLeft="@dimen/value_twenty"
+            android:layout_marginRight="@dimen/value_twenty"
+            android:gravity="center"
+            android:text="@string/text_already_login"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_info"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

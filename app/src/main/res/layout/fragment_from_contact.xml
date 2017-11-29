@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.communityDashboard.myCommunities.create.InviteFromContactFragment">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/value_thirty"
+            android:layout_height="@dimen/value_thirty"
+            android:layout_margin="@dimen/value_ten"
+            android:contentDescription="@string/image_description"
+            android:background="@mipmap/star_icon" />
+
+        <EditText
+            android:id="@+id/edit_text_contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/search"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@color/dark_gray"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_invite_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="41dp"
+        android:layout_above="@+id/bottom_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_sixty"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/create_community_button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/text_done"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginRight="@dimen/value_ten"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

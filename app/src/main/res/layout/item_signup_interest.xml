@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_signup_interest_textView_cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_twenty"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:text="Title"
+                android:textColor="@color/theme_light"
+                android:textSize="@dimen/text_size_primary" />
+
+            <TextView
+                android:id="@+id/item_signup_interest_textView_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/error_notFound_interest"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:layout_marginBottom="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_twenty"
+                android:layout_marginEnd="@dimen/value_twenty"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/item_signup_interest_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_marginTop="@dimen/value_ten"
+                android:nestedScrollingEnabled="false"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/item_signup_interest_relativeLayout_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_twenty"
+                android:layout_marginBottom="@dimen/value_ten">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/underline_height"
+                    android:layout_marginEnd="@dimen/value_ten"
+                    android:layout_marginTop="@dimen/value_eight"
+                    android:layout_toStartOf="@+id/item_signup_interest_textView_more"
+                    android:background="@color/underline" />
+
+                <TextView
+                    android:id="@+id/item_signup_interest_textView_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/item_signup_interest_center"
+                    android:text="More"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/theme_light"
+                    android:textSize="@dimen/text_size_info" />
+
+                <TextView
+                    android:id="@+id/item_signup_interest_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/item_signup_interest_imageView_more"
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_toEndOf="@+id/item_signup_interest_center"
+                    android:contentDescription="@string/image_description"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/value_eight"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/underline_height"
+
+                    android:layout_marginTop="@dimen/value_eight"
+                    android:layout_toEndOf="@+id/item_signup_interest_imageView_more"
+                    android:background="@color/underline" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/interest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="High blood pressure"
+            android:textColor="@color/community_description"
+            android:textSize="@dimen/value_twenty" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/selected_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@drawable/selected_radio"
+            android:padding="@dimen/value_eight"
+            android:visibility="gone"
+
+            />
+
+        <CheckBox
+            android:id="@+id/unselected_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@drawable/unselected"
+            android:padding="@dimen/value_eight"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/value_ten"
+        android:layout_marginRight="@dimen/value_ten"
+        android:background="@color/color_gray"
+        android:visibility="gone" />
+
+
+</LinearLayout>

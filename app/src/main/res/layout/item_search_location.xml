@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/item_searchLocation_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/item_searchLocation_imageView_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:contentDescription="@string/image_description"
+            android:src="@mipmap/location_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_searchLocation_textView_location_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current location"
+                android:layout_marginBottom="@dimen/value_five"
+                android:textSize="@dimen/text_size_secondary" />
+
+            <TextView
+                android:id="@+id/item_searchLocation_textView_location_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="@dimen/text_size_secondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/underline_height"
+        android:layout_below="@+id/item_searchLocation_linearLayout"
+        android:background="@color/underline" />
+
+
+</RelativeLayout>

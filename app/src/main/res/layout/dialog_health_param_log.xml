@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name=" com.trutek.looped.utils"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_ten"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/dialog_hpl_icon_star"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:padding="@dimen/value_five"
+            android:src="@mipmap/star_icon" />
+
+        <TextView
+            android:id="@+id/dialog_hpl_textView_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginTop="@dimen/value_ten"
+            android:layout_weight="0.8"
+            android:text="@string/dhpl_title_text"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_info" />
+
+        <ImageView
+            android:id="@+id/dialog_hpl_imageView_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/value_five"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="@dimen/value_five"
+            android:src="@mipmap/mdpii_icon_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/value_ten"
+        android:layout_marginRight="@dimen/value_ten"
+        android:background="@color/dark_gray"
+        android:padding="@dimen/value_ten"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/dialog_hpl_editText_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_primary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/underline_height"
+                android:layout_alignEnd="@+id/dialog_hpl_editText_reading"
+                android:layout_alignStart="@+id/dialog_hpl_editText_reading"
+                android:layout_below="@+id/dialog_hpl_editText_reading"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/underline" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/dialog_hpl_textView_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_primary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/underline_height"
+                android:layout_alignEnd="@+id/dialog_hpl_textView_unit"
+                android:layout_alignStart="@+id/dialog_hpl_textView_unit"
+                android:layout_below="@+id/dialog_hpl_textView_unit"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/underline" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_hpl_textView_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_fifteen"
+        android:background="@color/theme_dark"
+        android:gravity="center"
+        android:padding="@dimen/value_twenty"
+        android:text="@string/dhpl_done_text"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

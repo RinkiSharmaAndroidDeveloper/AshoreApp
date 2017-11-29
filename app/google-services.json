@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092026061818",
+    "project_id": "looped-148504"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092026061818:android:ebca27103835a26a",
+        "android_client_info": {
+          "package_name": "com.trutek.looped"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+//          "current_key": "AIzaSyDpe6_p8ts-fVvEcZwCus7nj_-SqGKKg30"
+          "current_key":""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-85934219-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,918 @@
+<resources>
+    <string name="app_name">Ashore</string>
+    <string name="profile_pic_icon">Profile Pic Icon</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="image_description">image</string>
+
+    <string name="error_notFound_community">We are not able to find any community. Please try again!</string>
+    <string name="error_noJoined_community">You haven\'t joined a community yet.</string>
+    <string name="error_notFound_interest">We are not able to find any interests. Please try again!</string>
+
+    <string name="info_noJoined_community">Take a look around!</string>
+
+
+    <!--CrashReport-->
+    <string name="crash_report_message">An unexpected error occurred forcing the
+    application to stop.Press Ok to report the issue.</string>
+    <string name="crash_report_ok_message">Thank You...</string>
+
+    <!--facebook-->
+    <string name="facebook_app_id">306667023081544</string>
+
+    <!--splash-->
+    <string name="text_looped">Ashore</string>
+
+    <!--signup-->
+    <string name="text_signup">SIGN UP</string>
+    <string name="text_phoneNumber">Phone number</string>
+    <string name="text_verify">VERIFY</string>
+    <string name="text_activate">ACTIVATE</string>
+    <string name="text_or">OR</string>
+    <string name="text_activate_code">Activation Code</string>
+    <string name="auth_mobile_field_is_incorrect">Please enter a valid mobile</string>
+    <string name="auth_email_field_is_incorrect">Please enter a valid email</string>
+    <string name="auth_email_field_not_entered">Please enter email</string>
+    <string name="auth_password_field_not_entered">Please enter password</string>
+    <string name="auth_password_field_is_too_short">Password is too short (minimum is 8 characters)</string>
+    <string name="auth_full_name_field_not_entered">Please enter Full Name</string>
+    <string name="auth_full_name_field_is_too_short">Full Name is too short (minimum is 3 characters)</string>
+    <string name="auth_full_name_field_is_too_long">Full Name is too long (maximum is 50 characters)</string>
+    <string name="auth_full_name_has_impossible_characters">Full Name has impossible characters (not allowed: \'&gt;\', \'&lt;\', \';\')</string>
+    <string name="forgot_password_email_field_not_entered">Please enter email</string>
+    <string name="forgot_password_email_field_is_incorrect">Please enter a valid email</string>
+    <string name="profile_full_name_not_entered">Please enter Full Name</string>
+    <string name="profile_full_name_not_changed">Full Name must be different</string>
+    <string name="change_password_old_password_not_entered">Please enter old password</string>
+    <string name="change_password_new_password_not_entered">Please enter new password</string>
+    <string name="change_password_all_fields_not_entered">Please fill all empty input fields</string>
+    <string name="change_password_old_password_wrong">Wrong old password</string>
+    <string name="auth_not_all_fields_entered">Please fill all empty input fields</string>
+    <string name="text_already_login">ALREADY A MEMBER ? LOG IN</string>
+    <string name="birthday">MM/DD/YY</string>
+    <string name="lets_get_started">Let’s Get Started</string>
+    <string name="create_a_new_event">Create a New Event</string>
+    <string name="public_communties_default_text">There are no activities yet…</string>
+
+
+    <!--Location Activity-->
+    <string name="locationActivity_text"><b>Great!</b> we found <b>%1$s</b> communities near you.</string>
+    <string name="locationActivity_button_text">Continue</string>
+    <string name="locationActivity_text_location_search">Searching for nearby cities</string>
+    <string name="locationActivity_text_location_change">I\'M NOT IN <b>%1$s</b></string>
+
+    <!--Search Location Activity-->
+    <string name="sla_locationNotDetected">Sorry! We can\'t locate you right now.</string>
+
+    <!--Public Community Activity-->
+    <string name="pca_title">Communities</string>
+    <string name="pca_text_next">Next</string>
+    <string name="pca_text_heading">Pick some Communities that interest you</string>
+
+    <!--Item Public Community-->
+    <string name="ipc_text_community">Community name</string>
+    <string name="ipc_text_community_description">Community description</string>
+    <string name="ipc_text_join">Join</string>
+    <string name="ipc_text_leave">Leave</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--drawer-->
+    <string name="text_edit_profile">Edit My Profile</string>
+    <string name="drawer_text_home">My Dashboard</string>
+    <string name="drawer_text_planner">Calendar</string>
+    <string name="drawer_text_recipient">Recipients Dashboard</string>
+    <string name="drawer_text_community_dashboard">Communities</string>
+    <string name="drawer_text_connections_dashboard">People</string>
+    <string name="drawer_text_chats">Recent Chats</string>
+    <string name="drawer_text_report_a_bug">Report A Bug</string>
+    <string name="drawer_text_settings">More Options</string>
+    <string name="drawer_text_log_out">Log Out</string>
+
+    <!--CreateProfileActivity-->
+    <string name="text_one">1</string>
+    <string name="text_two">2</string>
+    <string name="text_three">3</string>
+    <string name="create_account">Create Account</string>
+    <string name="discover">Discover</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_done">DONE</string>
+    <string name="text_terms_and_conditions">Terms &amp; Condition</string>
+    <string name="text_create_account">Create Account</string>
+    <string name="text_add_recipient">Add Recipient</string>
+    <string name="text_discover">Discover</string>
+    <string name="text_category_start">Which topics are you interested in?</string>
+
+    <!--Home-->
+    <string name="notification">Notification</string>
+    <string name="chats">Chats</string>
+    <string name="actionbar_text_recipient">Recipient\'s Dashboard</string>
+    <string name="create_new_group">New Group</string>
+
+    <!--Home Fragment-->
+    <string name="homeFragment_text_upcomingEvent">Upcoming Events</string>
+    <string name="homeFragment_text_recentActivity">Recent Activity</string>
+    <string name="homeFragment_text_discoverPeople">Discover People</string>
+    <string name="homeFragment_text_discoverCommunities">Discover Communities</string>
+    <string name="homeFragment_text_notFound_upcomingEvent">Looks like you don\'t have any events coming up</string>
+    <string name="homeFragment_text_notFound_recentActivity">No recent activity in your communities.</string>
+    <string name="homeFragment_text_notFound_discoverPeople">No one matches your search criteria right now.</string>
+    <string name="homeFragment_text_notFound_discoverPeople_inviteFriends">Want to invite some friends to Ashore?</string>
+    <string name="homeFragment_text_notFound_connection">You don\'t have any connections on Ashore yet.\n Why not take a look and see who\'s</string>
+    <string name="homeFragment_text_notFound_discoverCommunities">No communities match your search criteria right now</string>
+    <string name="homeFragment_text_notFound_discoverCommunities_createNew">Want to create a new community?</string>
+    <string name="past_event_activity_text_notFound_events">There are no past events in the community</string>
+    <!--edit_icon_layout-->
+    <string name="edit">Edit</string>
+    <!--edit_icon_layout-->
+    <string name="plus">Add</string>
+    <!--filter icon layout-->
+    <string name="filter">Filter</string>
+    <!--General-->
+    <string name="text_name">Name</string>
+    <string name="text_gender">Gender (Optional)</string>
+    <string name="text_location">Location</string>
+    <string name="text_birthday">Birthday (Optional)</string>
+    <string name="text_date_of_birth">Date Of Birth</string>
+    <string name="text_age">Age</string>
+    <string name="text_disease">Disease</string>
+
+    <!--About-->
+    <string name="tell_us_about_youself">Tell us about yourself.</string>
+
+    <!--Interest-->
+    <string name="looped_for">I\'m using Ashore for</string>
+    <string name="interested_in">I\'m interested in</string>
+    <string name="title_activity_create_profile_step3">createProfileStep2Activity</string>
+    <string name="title_activity_create_profile_step2">CreateProfileStep2Activity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="text_select_more_interest">Select more interests</string>
+
+    <!--Dialog Add Recipient-->
+    <string name="dar_title">Would you like to Add or Join Recipient?</string>
+    <string name="dar_text_new">New</string>
+    <string name="dar_text_existing">Existing</string>
+    <string name="dar_text_skip">Skip</string>
+
+    <!--popupDiscover-->
+    <string name="text_line_one">Would You Like to check out people and</string>
+    <string name="text_line_two">Communities that match some of </string>
+    <string name="text_line_three">interest you selected?</string>
+
+    <!--Discover-->
+    <string name="discover_people">Discover People</string>
+    <string name="discover_communities">Discover Communities</string>
+    <string name="previous_step_done">Step Done</string>
+    <string name="text_three_discover">3</string>
+    <string name="text_invite">Invite</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="text_search_more_communities">Search communities</string>
+    <string name="text_search_more_people">Search for more people</string>
+    <!--Invite-->
+    <string name="done">Done</string>
+    <string name="cdi_sms_invitation_text">demo text message to invites people</string>
+    <string name="cdi_invitation_sent_message">Thanks for invite people</string>
+    <string name="search">Search</string>
+
+    <!--My Communities Activities-->
+
+    <string name="communities_activities_title">Communities</string>
+    <string name="community_text_tab1">Joined</string>
+    <string name="community_text_tab2">Discover</string>
+
+    <!--Layout filter dialog-->
+    <string name="interest">Interests</string>
+    <string name="category">Categories</string>
+    <string name="topics">Topics</string>
+    <string name="location">Location</string>
+    <string name="radius">radius</string>
+    <string name="km0">0 MILES</string>
+    <string name="km10">10 MILES</string>
+    <string name="values0to10">0  1  2  3  4  5  6  7  8  9  10</string>
+    <string name="apply_filters">APPLY FILTERS</string>
+    <!--InvitePopUp-->
+    <string name="invite_text_line_one">Do you Invite Friends and </string>
+    <string name="invite_text_line_two"> Family to join your</string>
+    <string name="invite_text_line_three"> caregiving loop.</string>
+    <string name="cdi_sms_invitaton_text">I\'m using Ashore try</string>
+    <string name="cdi_invitaion_sent_message">Thanks for sharing !</string>
+    <string name="dp_noPhoneNumberFound">you don\'t have your contact\'s phone number.</string>
+
+    <!--Dashborad-->
+    <string name="text_my_agenda">AGENDA</string>
+    <string name="text_my_community">MY COMMUNITIES</string>
+    <string name="text_recent_activities">RECENT ACTIVITIES</string>
+
+
+    <!--ListAgendaDashboard-->
+    <string name="text_agenda_name">Agenda Content</string>
+    <string name="text_agenda_description">Discription</string>
+    <string name="text_agenda_time">10:30</string>
+    <string name="text_time_convention">AM</string>
+
+    <!--ListMyFamilyDashboard-->
+    <string name="text_sender_name">Name</string>
+    <string name="text_community">Community</string>
+    <string name="text_message">Message</string>
+
+    <!--editMyProfile-->
+    <string name="text_about_me">ABOUT ME</string>
+    <string name="text_details">DETAILS</string>
+    <string name="text_recipients">RECIPIENTS</string>
+    <string name="text_interested_in">I\'M INTERESTED IN</string>
+    <string name="text_looped_for">I\'M USING ASHORE FOR</string>
+    <string name="text_write_something_about_yourself">Write Something About Yourself?</string>
+    <string name="text_male">Male</string>
+    <string name="edit_prof_text_birthday">Birthday</string>
+
+    <!--ToolbarText-->
+    <string name="text_home">Home</string>
+    <string name="text_planner">Planner</string>
+    <string name="text_new_community">Create Community</string>
+    <string name="text_recipient_dashboard">Recipient Dashboard</string>
+    <string name="text_chats">Recent Chats</string>
+    <string name="capital_text_invite">INVITE</string>
+
+    <!--CommunityDashboard-->
+    <string name="text_discover_people">DISCOVER PEOPLE</string>
+    <string name="text_discover_communities">DISCOVER COMMUNITIES</string>
+    <string name="text_my_connection">My Connections</string>
+    <string name="text_connection">My Connections</string>
+    <string name="text_my_communities">MY COMMUNITIES</string>
+    <string name="text_communities">Communities</string>
+    <string name="text_resources">Resources</string>
+    <string name="text_join">JOIN</string>
+    <string name="text_joined">JOINED</string>
+    <string name="text_connect">CONNECT</string>
+    <string name="text_connected">CONNECTED</string>
+    <string name="text_global">Global</string>
+    <string name="text_members">Members</string>
+    <string name="text_connection_contact">Contacts List</string>
+    <string name="text_add_members">Add Members</string>
+    <string name="text_community_activity">@string/homeFragment_text_upcomingEvent</string>
+
+    <!--NewCommunityStepOne-->
+    <string name="text_what_kind_of_community">What kind of community would you like this to be?</string>
+    <string name="text_what_should_this_community_be_about">What should this community be about?</string>
+
+    <!--NewCommunityStepTwo-->
+    <string name="text_name_your_community">Name Your Community</string>
+    <string name="text_add_description">Add Description</string>
+    <string name="text_enter_cityName_or_ZipCode">Enter City/State or Zip code</string>
+    <string name="text_community_privacy">Privacy</string>
+    <string name="text_community_make_privacy">Make this group private?</string>
+    <string name="text_community_can_see">Only members of the group can see events and posts</string>
+    <string name="text_community_group_post">Group Post</string>
+    <string name="text_community_all_group">All members of the group can make posts</string>
+    <string name="text_community_public">Public</string>
+    <string name="text_community_group_everyone">Everyone</string>
+    <string name="text_community_group_member">Members</string>
+
+    <!--NewCommunityStepThree-->
+    <string name="text_invite_all">INVITE ALL</string>
+    <!--EditCommunity-->
+    <string name="text_community_i_like">Communities i like</string>
+    <string name="button_text_resources">Resources</string>
+    <string name="button_text_giving_tips">Giving Tips</string>
+    <string name="button_text_getting_tips">Getting Tips</string>
+    <string name="text_edit_community">Edit</string>
+    <!--Filter-->
+    <string name="text_interest">Interests</string>
+    <string name="text_topics">Topics</string>
+    <string name="text_filter">Filters</string>
+    <string name="text_show_result">Show Results</string>
+
+    <!--FloatingButton-->
+    <string name="text_add_community">Add Community</string>
+    <string name="text_add_event">Add Event</string>
+    <string name="text_add_medication">Add Medication</string>
+    <string name="text_add_note">Add Note</string>
+    <string name="text_add_status_update">Update Status</string>
+    <string name="text_add_expense">Add Expense</string>
+
+    <!--CreateActivity-->
+    <string name="text_create_activity">Create Activity</string>
+    <string name="text_make_event">Create Event</string>
+    <string name="text_write_something">Write Something!</string>
+    <string name="text_event_title">Event Title</string>
+    <string name="text_event_description">Write Event Description</string>
+    <string name="text_date_and_time">Date &amp; Time</string>
+    <string name="text_Enter_city_state_or_zip_code">Enter city/state or zip \ncode</string>
+    <string name="text_invite_guests">INVITE GUESTS</string>
+    <string name="text_create">CREATE</string>
+    <string name="text_create_small">Create</string>
+    <!--Edit Activity-->
+    <string name="text_done_editing">DONE</string>
+    <string name="text_edit_activity">Edit Activity</string>
+
+    <!-- display profile-->
+
+    <!--chats-->
+    <string name="text_chat">Chats</string>
+    <string name="text_user_name">Name</string>
+    <string name="text_last_message">Last Message</string>
+    <string name="title_activity_private_dialog">PrivateDialogActivity</string>
+    <string name="dlg_not_joined_room">You have not joined chat room! Please wait�</string>
+    <string name="dlg_refresh_session">QB Session expired. Update session will be executed now</string>
+
+    <string name="dlg_fail_create_chat">Errors occurred while creating chat! Please, try later</string>
+    <string name="dlg_fail_connection">Sorry, connection lost. It will be reestablished when the Internet will be available.</string>
+    <string name="dlg_fail_create_groupchat">Errors occurred while creating group chat! Please, try later</string>
+    <string name="chat_service_is_initializing">Please, wait, connection is setting up…</string>
+    <string name="dlg_fail_send_msg">Errors occurred while sending msg! Please, try later</string>
+    <string name="dlg_attached_last_message">Attachment</string>
+    <string name="file_was_attached">file was attached</string>
+    <string name="dlg_choose_image_from">Select image from…</string>
+    <string name="dlg_wait_please">Please wait</string>
+    <string name="dlg_fail_upload_attach">Errors occurred during loading file</string>
+    <string name="empty_string">Please fill mandatory field</string>
+    <string name="text_single_chat">CHAT</string>
+    <string name="add_friends_to_group_no_friends_for_adding">No Friends for adding</string>
+    <string name="dialog_details_name_not_entered">Please fill group name</string>
+    <string name="txt_admin">Admin</string>
+
+    <string name="dlg_leave_group">Leave Group</string>
+    <string name="dlg_confirm">Are you sure?</string>
+    <string name="dialog_details_service_is_initializing">Please, wait, connection is setting up…</string>
+
+    <!--notification-->
+
+    <string name="new_group">New chat</string>
+    <string name="group_info">Group Info</string>
+    <string name="create_group_group_name">Group Name</string>
+    <string name="cht_notification_message">Notification message</string>
+    <string name="create_group_empty_group_name">Group name can not be empty</string>
+    <string name="create_group_empty_group_user">Please select users</string>
+    <string name="provide_icon_name_group">Provide a group name and optional group icon</string>
+
+    <string name="cht_update_group_create_message">%1$s has added %2$s</string>
+    <string name="cht_update_group_name_message">%1$s has changed the group name to %2$s</string>
+    <string name="cht_update_group_photo_message">%1$s has changed the group icon</string>
+    <string name="cht_update_group_added_message">%1$s has added %2$s to the group chat</string>
+    <string name="cht_update_group_leave_message">%1$s has left chat</string>
+    <string name="snackbar_new_message_title">%1$s : %2$s</string>
+    <string name="dialog_reply">Reply</string>
+    <string name="cht_add_new_member">Add new member…</string>
+
+    <string-array name="dlg_image_pick">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+    <string-array name="dlg_private_chat_pick">
+        <item>Delete</item>
+    </string-array>
+    <string-array name="dlg_group_chat_pick">
+        <item>Leave Group</item>
+    </string-array>
+    <string name="title_activity_create_community">CreateCommunityActivity</string>
+    <string name="title_activity_display_profile">DisplayProfile</string>
+    <string name="title_activity_display_community">DisplayCommunity</string>
+    <string name="title_activity_community_list">CommunityListActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="text_default_no_activities">There are no activities yet in this community.</string>
+
+    <!--activity details-->
+    <string name="title_activity_edit_community">EditCommunityActivity</string>
+
+    <string name="txt_hosted_by">Hosted by </string>
+    <string name="txt_at">at</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_discussion">DiscussionActivity</string>
+
+    <!--Discussion Activity-->
+    <string name="title_discussions">Discussions</string>
+    <string name="reply">Reply</string>
+    <string name="discussion_activity_text_comment">Add a Comment</string>
+    <string name="title_activity_select_connection">SelectConnectionActivity</string>
+    <string name="discussion_text_seeAll">See All</string>
+
+    <!--Recipient Dashboard-->
+    <string name="rd_medication">Medication \u0026 Prescription</string>
+    <string name="rd_tracking">Tracking</string>
+    <string name="rd_budget">Budgeting \u0026 Expenses</string>
+    <string name="rd_notes">Notes \u0026 Documentation</string>
+    <string name="rd_history">History</string>
+
+    <!--Recipient Profile-->
+    <string name="rp_details">DETAILS</string>
+    <string name="rp_condition">CONDITIONS</string>
+    <string name="rp_detail_hint_gender">Gender</string>
+    <string name="rp_detail_hint_dob">@string/edit_prof_text_birthday</string>
+    <string name="rp_text_own_account">Does %1$s need a user account for %2$s?</string>
+
+    <!--Health Chart-->
+    <string name="dhc_title_text">Health Parameter</string>
+
+    <!--Add Health Parameter-->
+    <string name="ahp_title_text">Add Health Parameter</string>
+    <string name="ahp_search_text">I\'m using Ashore for</string>
+
+    <!--Dialog health param log-->
+    <string name="dhpl_title_text">Add Readings</string>
+    <string name="dhpl_done_text">Done</string>
+
+
+    <!--Display Disease-->
+    <string name="dd_search_hint">I\'m looking for a condition</string>
+    <!--NewMedicineText-->
+    <string name="text_medication">Medication</string>
+    <string name="text_medicine_name">Medicine Name</string>
+    <string name="text_medicine_duration">Duration</string>
+    <string name="text_medicine_frequency">Frequency</string>
+    <string name="text_add_new_medicine_name">Add New Medicine</string>
+    <string name="text_medicine_schedule">Schedule</string>
+    <string name="text_edit_medicine">Edit Medicine</string>
+    <string name="text_frequency_duration">Frequency/Duration</string>
+    <string name="text_medicine_dosage">Dosage</string>
+    <string name="text_medicine_per_day_dosage">dosage/day</string>
+    <string name="text_medicine_per_day_week">days/week</string>
+    <string name="text_medicine_today">Today</string>
+    <string name="text_medicine_no_preview">No Preview</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_ok">Ok</string>
+
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>1684,AS</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>1264,AI</item>
+        <item>672,AQ</item>
+        <item>1268,AG</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>1242,BS</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>1441,BM</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>246,IO</item>
+        <item>1284,VG</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>1345,KY</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>599,CW</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>1767,DM</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>1473,GD</item>
+        <item>1671,GU</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>354,IS</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>1876,JM</item>
+        <item>81,JP</item>
+        <item>441534,JE</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>383,XK</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>1664,MS</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>95,MM</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>16870,MP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>970,PS</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>242,CG</item>
+        <item>262,RE</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>290,SH</item>
+        <item>1869,KN</item>
+        <item>1758,LC</item>
+        <item>590,MF</item>
+        <item>508,PM</item>
+        <item>1784,VC</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>211,SS</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>47,SJ</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>1868,TT</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>1340,VI</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>212,EH</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <!---Medicine Dosage List-->
+    <string-array name="Medicine_Dosage_arrays">
+        <item>Dosage</item>
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+        <item>3.5</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>5.0</item>
+        <item>5.5</item>
+        <item>6.0</item>
+        <item>6.5</item>
+        <item>7.0</item>
+        <item>7.5</item>
+        <item>8.0</item>
+        <item>8.5</item>
+        <item>9.0</item>
+        <item>9.5</item>
+        <item>10.0</item>
+    </string-array>
+
+    <!--validations-->
+    <string name="community_subject">What do you want to call this community?</string>
+    <string name="community_body">Tell us what kind of community this is and what it should be about</string>
+    <string name="date_validation">Please enter valid date/time</string>
+    <string name="location_validation">Where is this event going to take place?</string>
+    <string name="empty_planner">Looks like your calendar\'s open! Why not plan something?</string>
+    <string name="empty_name">What is your name?</string>
+    <string name="empty_location">Where are you located?</string>
+    <string name="location_error">Invalid location</string>
+
+    <string name="txt_for_no_activity">Looks like you don\'t have any events coming up </string>
+    <string name="empty_subject">Subject could not be empty.</string>
+    <string name="title_activity_image_preview">ImagePreviewActivity</string>
+    <string name="title_activity_create_group_dialog">CreateGroupDialogActivity</string>
+    <string name="title_activity_group_dialog">GroupDialogActivity</string>
+    <string name="title_activity_details_dialog">DetailsDialogActivity</string>
+    <string name="title_activity_add_friends_to_group">AddFriendsToGroupActivity</string>
+
+
+    <!--settings-->
+    <string name="text_report_bug">Terms of use</string>
+    <string name="text_contact_us">Contact Us</string>
+    <string name="text_term_condition">Privacy policy</string>
+    <string name="text_about_help">About and Help</string>
+    <string name="text_media">Media</string>
+    <string name="text_reminders">Reminders</string>
+    <string name="text_alert_notification">Alert and Notifications</string>
+    <string name="text_auto_download">Auto Download Attachment</string>
+    <string name="text_save_to_gallery">Save to Gallery</string>
+    <string name="text_sound">Sound</string>
+    <string name="text_medicine">Medicine</string>
+    <string name="text_planner_event">Planner Event</string>
+    <string name="title_activity_display_loops">DisplayLoopsActivity</string>
+    <string name="save">SAVE</string>
+    <string name="text_privacy">Privacy Policy</string>
+    <string name="text_terms">Terms of Use</string>
+    <string name="text_ashore_corpration">ASHORE : TRUTEK CORP.</string>
+    <string name="text_effective">(Effective as of February 24,2017)</string>
+
+    <string name="recipient_loop_text">%1$s \'S LOOP</string>
+    <string name="recipient_provider_text">%1$s \'S PROVIDER</string>
+    <string name="title_activity_invite_from_loop">InviteFromLoopActivity</string>
+    <string name="text_accept">Accept</string>
+    <string name="text_reject">Reject</string>
+    <string name="text_diseases">Diseases</string>
+    <string name="text_starred_message">You haven\'t saved any messages yet. If you\'d like to save a message for later,just press the star next to it.</string>
+
+    <!--Connection Menu-->
+    <string name="text_item_disconnect">Disconnect</string>
+    
+    <!--Display community-->
+    <string name="dc_text_description_title">Description</string>
+    <string name="dc_text_description_hint">write short paragraph about the community</string>
+    <string name="dc_text_member_title">Members</string>
+    <string name="dc_text_show_member">Members</string>
+
+    <!--Dialog Options-->
+    <string name="dialog_option_text_reportAbuse">Report abuse</string>
+    <string name="dialog_option_text_unFriend">UnFriend</string>
+    <string name="dialog_option_text_delete">Delete</string>
+    <string name="dialog_option_text_cancel">Cancel</string>
+
+    <!--Comment-->
+    <string name="comment_text_replies">%1$d Replies</string>
+    <string name="comment_text_hint">Add a Comment</string>
+    <string name="text_terems_use">Welcome to the Trutek Corp. service Ashore (the “app” or “Service”).  The following Terms of Use apply when you view or use the Service via our website located at stayashore.com or by accessing the Service through clicking on the application (the “App”) on your iOS or Android mobile device.  Please review the following terms carefully.  By accessing or using the Service, you signify your agreement to these Terms of Use.  If you do not agree to these Terms of Use, you may not access or use the Service. Please contact us with any questions regarding our Terms of Use Agreement (the “Agreement”.). \n\n
+This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Service. This Agreement includes the Company’s Privacy Policy, found at ___, and any terms disclosed and agreed to by you if you purchase or accept additional features, products or services we offer on the Service, such as terms governing features, billing, free trial, discounts and promotions.\n\n
+PRIVACY POLICY
+The Company respects the privacy of its Service users.  Please refer to the Company’s Privacy Policy which explains how we collect, use, and disclose information that pertains to your privacy.  When you access or use the Service, you signify your agreement to this Privacy Policy.\n\n
+ABOUT THE SERVICE
+The Service allows you to search for and connect with other users based on factors such as location, interests, and other preferences based on personal information. Users can communicate, plan, and search for events using the Service.\n\n
+REGISTRATION; RULES FOR USER CONDUCT AND USE OF THE SERVICE
+You need to be at least 13 years old to register for and use the Service.
+If you are a user who signs up for the Service, you will create a personalized account linked to your mobile phone number, email address, and/or Facebook account. You may also create a password to access the Service and to receive messages from the Company.  You agree to notify us immediately of any unauthorized use of your password and/or account. The Company will not be responsible for any liabilities, losses, or damages arising out of the unauthorized use of your member name, password and/or account.
+If you choose to log in to Ashore using your Facebook account, you authorize us to use certain Facebook account information, including but not limited to your public profile, likes, and information about your Facebook friends, including those you have in common with other users.\n\n
+USE RESTRICTIONS.
+Your permission to use the Service is conditioned upon the following Use Restrictions and Conduct Restrictions: You agree that you will not under any circumstances:
+•	post any information that is abusive, threatening, obscene, defamatory, libelous, or racially, sexually, religiously, or otherwise objectionable and offensive;
+•	promote or threaten physical harm to another person or group;
+•	promote or provide material that exploits people in a sexual, violent, or other illegal manner;
+•	solicit personal information from anyone under the age of 18;
+•	use the service for any unlawful purpose or for the promotion of illegal activities;
+•	attempt to, or harass, abuse or harm another person or group;
+•	request money from or otherwise attempt to defraud other users of the Service;
+•	use another user’s account without permission;
+•	post or transmit personal information about another individual without their permission, including video, audio, photographs, or written content. In the case of minors, you must have the permission of the minor’s legal guardian;
+•	provide false or inaccurate information when registering an account;
+•	interfere or attempt to interfere with the proper functioning of the Service;
+•	make any automated use of the system, or take any action that we deem to impose or to potentially impose an unreasonable or disproportionately large load on our servers or network infrastructure;
+•	transmit or attempt to transmit “junk mail”, “chain letters” or other unsolicited mass communications, such as “spamming”.
+•	bypass any robot exclusion headers or other measures we take to restrict access to the Service or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data; or
+•	publish or link to malicious content intended to damage or disrupt another user’s browser or computer.\n\n
+POSTING AND CONDUCT RESTRICTIONS.
+When you create your own personalized account, you may be able to provide (“User Content”).  You are solely responsible for the User Content that you post, upload, link to or otherwise make available via the Service.  You agree that we are only acting as a passive conduit for your online distribution and publication of your User Content.  The Company, however, reserves the right to remove any User Content from the Service at its discretion.
+The following rules pertain to User Content. By transmitting and submitting any User Content while using the Service, you agree as follows:
+•    You are solely responsible for your account and the activity that occurs while signed in to or while using your account;
+•    You will not post information that is malicious, false or inaccurate;
+•    You will not submit content that is copyrighted or subject to third party proprietary rights, including privacy, publicity, trade secret, etc., unless you are the owner of such rights or have the appropriate permission from their rightful owner to specifically submit such content; and
+•    You hereby affirm we have the right to determine whether any of your User Content submissions are appropriate and comply with these Terms of Service, remove any and/or all of your submissions, and terminate your account with or without prior notice.
+You understand and agree that any liability, loss or damage that occurs as a result of the use of any User Content that you make available or access through your use of the Service is solely your responsibility.  The Company is not responsible for any public display or misuse of your User Content.  The Company does not, and cannot, pre-screen or monitor all User Content.  However, at our discretion, we, or technology we employ, may monitor and/or record your interactions with the Service.\n\n
+ONLINE CONTENT DISCLAIMER
+Opinions, advice, statements, offers, or other information or content made available through the Service, but not directly by the Company, are those of their respective authors, and should not necessarily be relied upon.  Such authors are solely responsible for such content.  The Company does not guarantee the accuracy, completeness, or usefulness of any information on the Service and neither does the Company adopt nor endorse, nor is the Company responsible for, the accuracy or reliability of any opinion, advice, or statement made by parties other than the Company.  The Company takes no responsibility and assumes no liability for any User Content that you or any other user or third party posts or sends over the Service.  Under no circumstances will the Company be responsible for any loss or damage resulting from anyone’s reliance on information or other content posted on the Service, or transmitted to users.
+Though the Company strives to enforce these Terms of Use, you may be exposed to User Content that is inaccurate or objectionable.  The Company reserves the right, but has no obligation, to monitor the materials posted in the public areas of the service or to limit or deny a user’s access to the Service or take other appropriate action if a user violates these Terms of Use or engages in any activity that violates the rights of any person or entity or which we deem unlawful, offensive, abusive, harmful or malicious. Messages and other communications sent between you and other participants that are not readily accessible to the general public will be treated as private to the extent required by applicable law. The Company shall have the right to remove any such material that in its sole opinion violates, or is alleged to violate, the law or this agreement or which might be offensive, or that might violate the rights, harm, or threaten the safety of users or others.  Unauthorized use may result in criminal and/or civil prosecution under Federal, State and local law.  If you become aware of misuse of our Service, please contact us at info@trutekcorp.com \n\n
+LINKS TO OTHER SITES AND/OR MATERIALS
+As part of the Service, the Company may provide you with convenient links to third party website(s) (“Third Party Sites”) as well as content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”).  These links are provided as a courtesy to Service subscribers.  The Company has no control over Third Party Sites and Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content.  Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by the Company, and the Company is not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content.  Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by the Company.  If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern.  You should review the applicable terms and policies, including privacy and data gathering practices, of any site to which you navigate from the Site or relating to any applications you use or install from the site.\n\n
+COPYRIGHT COMPLAINTS AND COPYRIGHT AGENT
+(a) Termination of Repeat Infringer Accounts.  The Company respects the intellectual property rights of others and requests that the users do the same.  Pursuant to 17 U.S.C. 512(i) of the United States Copyright Act, the Company has adopted and implemented a policy that provides for the termination in appropriate circumstances of users of the Service who are repeat infringers.  The Company may terminate access for participants or users who are found repeatedly to provide or post protected third party content without necessary rights and permissions.
+(b) DMCA Take-Down Notices.  If you are a copyright owner or an agent thereof and believe, in good faith, that any materials provided on the Service infringe upon your copyrights, you may submit a notification pursuant to the Digital Millennium Copyright Act (see 17 U.S.C 512) (“DMCA”) by sending the following information in writing to the Company’s designated copyright agent at 281 E. Main Street, Somerville NJ 08876."\n\n
+
+1.	The date of your notification;
+2.	A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;
+3.	A description of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;
+4.	A description of the material that is claimed to be infringing or to be the subject of infringing activity and information sufficient to enable us to locate such work;
+5.	Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and/or email address;
+6.	A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and
+7.	A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+(c) Counter-Notices. If you believe that your User Content that has been removed from the Site is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use the content in your User Content, you may send a counter-notice containing the following information to our copyright agent using the contact information set forth above:
+
+1.	Your physical or electronic signature;
+2.	A description of the content that has been removed and the location at which the content appeared before it was removed;
+3.	A statement that you have a good faith belief that the content was removed as a result of mistake or a misidentification of the content; and
+4.	Your name, address, telephone number, and email address, a statement that you consent to the jurisdiction of the federal court in New York and a statement that you will accept service of process from the person who provided notification of the alleged infringement.
+If a counter-notice is received by the Company copyright agent, the Company may send a copy of the counter-notice to the original complaining party informing such person that it may reinstate the removed content in 10 business days.  Unless the copyright owner files an action seeking a court order against the content provider, member or user, the removed content may (in the Company’s discretion) be reinstated on the Site in 10 to 14 business days or more after receipt of the counter-notice.
+
+LICENSE GRANT
+By posting any User Content via the Service, you expressly grant, and you represent and warrant that you have a right to grant, to the Company a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, reproduce, modify, publish, list information regarding, edit, translate, distribute, publicly perform, publicly display, and make derivative works of all such User Content and your name, voice, and/or likeness as contained in your User Content, if applicable, in whole or in part, and in any form, media or technology, whether now known or hereafter developed, for use in connection with the Service.
+INTELLECTUAL PROPERTY
+You acknowledge and agree that we and our licensors retain ownership of all intellectual property rights of any kind related to the Service, including applicable copyrights, trademarks and other proprietary rights.  Other product and company names that are mentioned on the Service may be trademarks of their respective owners. We reserve all rights that are not expressly granted to you under this Agreement.
+EMAIL MAY NOT BE USED TO PROVIDE NOTICE
+Communications made through the Service’s e-mail and messaging system, will not constitute legal notice to the Company or any of its officers, employees, agents or representatives in any situation where notice to the Company is required by contract or any law or regulation.
+USER CONSENT TO RECEIVE COMMUNICATIONS IN ELECTRONIC FORM
+For contractual purposes, you (a) consent to receive communications from the Company in an electronic form via the email address you have submitted; and (b) agree that all Terms of Use, agreements, notices, disclosures, and other communications that the Company provides to you electronically satisfy any legal requirement that such communications would satisfy if it were in writing.  The foregoing does not affect your non-waivable rights.
+We may also use your email address, to send you other messages, including information about the Company and special offers. You may opt out of such email by changing your account settings or sending an email to info@trutekcorp.com or mail to the following postal address:
+Trutek Corp., 281 E. Main Street, Somerville NJ 08876.
+Opting out may prevent you from receiving messages regarding the Company or special offers.
+WARRANTY DISCLAIMER
+THE SERVICE, IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, REGARDING THE SERVICE INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SECURITY, ACCURACY AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, THE COMPANY MAKES NO WARRANTY OR REPRESENTATION THAT ACCESS TO OR OPERATION OF THE SERVICE WILL BE UNINTERRUPTED OR ERROR FREE. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR DOWNLOADING AND/OR USE OF FILES, INFORMATION, CONTENT OR OTHER MATERIAL OBTAINED FROM THE SERVICE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF WARRANTY, SO THIS PROVISION MAY NOT APPLY TO YOU.
+LIMITATION OF DAMAGES; RELEASE
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, DIRECTORS, OR EMPLOYEES, OR ITS LICENSORS OR PARTNERS, BE LIABLE TO YOU FOR ANY LOSS OF PROFITS, USE,  OR DATA, OR FOR ANY INCIDENTAL, INDIRECT, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, HOWEVER ARISING, THAT RESULT FROM (A) THE USE, DISCLOSURE, OR DISPLAY OF YOUR USER CONTENT; (B) YOUR USE OR INABILITY TO USE THE SERVICE; (C) THE SERVICE GENERALLY OR THE SOFTWARE OR SYSTEMS THAT MAKE THE SERVICE AVAILABLE; OR (D) ANY OTHER INTERACTIONS WITH THE COMPANY OR ANY OTHER USER OF THE SERVICE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE) OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE COMPANY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.  SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF LIABILITY, SO THIS PROVISION MAY NOT APPLY TO YOU.
+If you have a dispute with one or more users or other parties you contact through our Service, you release us (and our officers, directors, agents, subsidiaries, joint ventures and employees) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes.  If you are a California resident, you waive California Civil Code §1542, which says: “A general release does not extend to claims which the creditor does not know or suspect to exist in his favor at the time of executing the release, which if known by him must have materially affected his settlement with the debtor.”
+MODIFICATION OF TERMS OF USE
+We can amend these Terms of Use at any time and will update these Terms of Use in the event of any such amendments.  It is your sole responsibility to check the Site from time to time to view any such changes in the Agreement.  If you continue to use the Site, you signify your agreement to our revisions to these Terms of Use.  However, we will notify you of material chances to the terms by posting a notice on our homepage and/or sending an email to the email address you provided to us upon registration.  For this additional reason, you should keep your contact and profile information current.  Any changes to these Terms (other than as set forth in this paragraph) or waiver of the Company’s rights hereunder shall not be valid or effective except in a written agreement bearing the physical signature of an officer of the Company.  No purported waiver or modification of this Agreement by the Company via telephonic or email communications shall be valid.
+GENERAL TERMS
+If any part of this Agreement is held invalid or unenforceable, that portion of the Agreement will be construed consistent with applicable law.  The remaining portions will remain in full force and effect. Any failure on the part of the Company to enforce any provision of this Agreement will not be considered a waiver of our right to enforce such provision.  Our rights under this Agreement will survive any termination of this Agreement.
+You agree that any cause of action related to or arising out of your relationship with the Company must commence within ONE year after the cause of action accrues.  Otherwise, such cause of action is permanently barred.
+These Terms of Use and your use of the Site are governed by the federal laws of the United States of America and the laws of the State of New Jersey, without regard to conflict of law provisions.
+The Company may assign or delegate these Terms of Service and/or the Company’s Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without the Company’s prior written consent, and any unauthorized assignment and delegation by you is void.
+YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF USE, AND WILL BE BOUND BY THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF USE TOGETHER WITH THE PRIVACY POLICY REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.
+
+
+</string>
+    <string name="text_privacy_policy">Trutek Corp. (“Trutek”, “the Company”, “we” and “us”) is committed to maintaining and protecting the privacy of the users of its Ashore mobile application (“you”). This Privacy Policy describes the information we collect, how that information may be used, with whom it may be shared, and your choices about such uses and disclosures. We encourage you to read this Privacy Policy carefully when using our application or services or transacting business with us. By using our website or application (our “app” or “Service”), you are accepting the practices described in this Privacy Policy.\n\n
+For purposes of this Agreement, “Service” refers to the Company’s service which can be accessed via our website at www.stayashore.com or through our mobile application “Ashore” available on iOS and Android in which users can create a social profile and connect to other users. By accepting our Privacy Policy and Terms of Use, found at ___, you consent to our collection, storage, use and disclosure of your personal information as described in this Privacy Policy. The information may be sent to servers located in the United States and countries around the world.\n\n
+I.INFORMATION WE COLLECT \n\n
+We collect “Non-Personal Information” and “Personal Information.”  Non-Personal Information includes information that cannot be used to personally identify you, such as anonymous usage data, general demographic information we may collect, referring/exit pages and URLs, platform types, preferences you submit and preferences that are generated based on the data you submit and number of clicks.  Personal Information includes your email, mobile phone number, interests, gender, birthday, education history, relationship interests, location, photos, personal profile description, and friends/contacts. If you choose to sign up for Ashore using your Facebook login, you authorize us to access certain Facebook account information, including your public Facebook profile, consistent with your privacy settings in Facebook. This access includes the type of Personal Information described above. In addition, you authorize us to access information about your likes, and information about and photos of your Facebook friends who might be common Facebook friends with other Ashore users. \n\n
+In order to provide and maintain quality of the Service, we track information provided to us by your mobile device when you download or use the Service. We may collect and store any personal information you provide while using our Service or in some other manner. This may include identifying information, such as your name, address, email address and telephone number, and if you transact business with us, financial information. You may also provide us photos, a personal description and information about your gender and preferences for people and event recommendations, such as location, search distance, age range, and gender. If you chat with other Ashore users, you provide us the content of your chats, including photo, video, and voice content. If you contact us with a customer service or other inquiry, you also provide us with the content of that communication.\n\n
+We automatically collect information from your browser or device when you use our Service. This information includes but is not limited to your IP address, device ID and type, your browser type and language, the operating system used by your device, access times, your mobile device’s geographic location while our application is actively running, and the referring website address. \n\n
+We may send cookies to your device to facilitate access to our Service and personalize your experience. We may use cookies to automatically collect information about your activity on our service, collect Non-Personal Information, and keep a record of your preferences while using our services, both on an individual and aggregate basis.\n\n
+If you’re using the Ashore app, we recognize your device by using mobile device IDs, which are unique device identifiers assigned by the manufacturer. For iOS 6 and later, we use Advertising IDs instead of cookies to recognize you. Device IDs cannot be deleted, although Advertising IDs can be reset in “Settings” on your iPhone. Ad companies may use device IDs or Advertising IDs to track your use of the app, track the number of ads displayed, measure ad performance and display ads that are more relevant to you. Analytics companies use device IDs to track information about app usage.\n\n
+If you access the Ashore website, you may provide us with certain information, such as the website you came from (known as the “referring URL”), the type of browser you use, the device from which you connected to the Service, the time and date of access, and other information that does not personally identify you.  We track this information using cookies, or small text files which include an anonymous unique identifier.\n\n
+We may allow third party service providers, including but not limited to advertising companies and ad networks, to display advertisements on our Service. These companies may use tracking technologies, such as cookies or web beacons, to collect information about users who view and interact with their advertisements. We do not provide any non-anonymized personal information to third parties.\n\n
+II.HOW WE USE AND SHARE INFORMATION\n\n
+Personal Information
+Except as otherwise stated in this Privacy Policy, we do not sell, trade, rent or otherwise share for marketing purposes your Personal Information with third parties without your consent. We do share Personal Information with vendors who are performing services for the Company, such as the servers for our email communications who are provided access to user’s email address for purposes of sending emails from us.  Those vendors use your Personal Information only at our direction and in accordance with our Privacy Policy.
+In general, the Personal Information you provide to us is used to help us communicate with you and provide our Service.  For example, we use Personal Information to contact users in response to questions, solicit feedback from users, provide technical support, inform users about changes to our Service, and perform research and analysis about your use of or interest in our or product or content, both individually and in aggregate.
+In all circumstances, we reserve the right to use a third party vendor to perform these functions on our behalf. If you access our Service from a third party social platform, such as Facebook, we may share non-personal information with that platform to the extent permitted by your agreement with it.\n\n
+Information Shared with Other Users \n\n
+When you register as a user of Ashore, your Ashore profile will be viewable by other users of the Service. Other users will be able to view information you have provided us directly or through Facebook, if applicable. This includes your photos, your name, your age, location and/or approximate distance from other users, personal description, interests and likes, and common friends in Ashore or on Facebook.
+If you and another Ashore user have mutually liked each other, you will form a “connection” and be able to chat, send pictures, videos, and make voice calls. Your connection will be able to see or hear any content you send in this manner. Your connections may also add their own connections to group conversations, and those users will also be able to access any content posted there.
+Information Shared with Others \n\n
+We do not share your personal information with others except as indicated in this Privacy Policy. We may share information with third parties that perform certain services on our behalf, including fulfilling orders, providing customer support, marketing assistance, business and sales analytics, ad tracking and analytics, user screening, and supporting the Service’s functionality and features. These service providers may have access to personal information only as needed to perform their functions. They are not permitted to share or use such information for any other purposes.
+In addition, we may disclose your information, including personal information, for the following reasons:
+•	In response to a subpoena or similar investigative demand, a court order, or a request for cooperation from a law enforcement or other government agency;
+•	To establish or exercise our legal rights or defend against legal claims;
+•	When we believe disclosure is appropriate in connection with efforts to investigate, prevent, or otherwise take action against illegal activity, suspected fraud, or other wrongdoing;
+•	To protect and defend the rights, property or safety of the Company, our users, our employees, or others;
+•	To comply with the law or cooperate with law enforcement;
+•	To enforce our Terms of Use or other applicable agreements or policies; or
+•	In connection with a substantial corporate transaction, such as the sale of our business, a divestiture, merger, consolidation, asset sale, or declaration of bankruptcy.
+We reserve the right to disclose personal information as otherwise required by law. In any such case, we may raise or waive any legal objection or right available to us.
+In the event we undergo a business transaction such as a merger, acquisition by another company, or sale of all or a portion of our assets, your Personal Information may be among the assets transferred.  You acknowledge and consent that such transfers may occur and are permitted by this Privacy Policy, and that any acquirer of our assets may continue to process your Personal Information as set forth in this Privacy Policy.  If our information practices change at any time in the future, we will post the policy changes to this website so that you may opt out of the new information practices.  We suggest that you check the site periodically if you are concerned about how your information is used.\n\n
+Aggregated and/or Non-Personal Information \n\n
+In general, we use Non-Personal Information to help us improve the Service and customize the user experience.  We also aggregate Non-Personal Information in order to track trends and analyze use patterns in the app.  This Privacy Policy does not limit in any way our use or disclosure of Non-Personal Information and we reserve the right to use and disclose such Non-Personal Information to our partners, advertisers and other third parties at our discretion. Any aggregated personal information to be shared is communicated with third parties in hashed, non-human readable form.
+Third Party Websites
+While using our Service, you may be able to click on a link to access other websites that do not operate under this Privacy Policy. For example, if you click on an advertisement, or a link sent by another user, you may be taken to a website we do not control. These websites may independently solicit and collect personal and non-personal information from you, and in some instances, provide us with information about your activities on those websites. In order to determine how your information may be used by these sites, we recommend you consult the privacy policies of those websites. We also recommend you exercise discretion when clicking on a link to a third party site shared by another user.
+User-Submitted Personal Information
+Ashore allows you to access areas on our Service where you can post information about yourself and others. You can also communicate with others and make certain posts visible to all users, such as events. Such postings are governed by our Terms of Use. Whenever you voluntarily disclose personal information on publicly-viewable pages, that information will be publicly available to all users and can be viewed and collected by others. Posts visible only to your connections can be viewed and collected by them. Outside of the limits described above, we cannot control who reads your posts or what other users may do with the information you voluntarily post or share. We urge you to exercise discretion and caution with respect to your personal information.
+If you have an Ashore account, you have the ability to access and update your personal information within the Service by opening your account and going to settings or to your profile. You may close your account at any time by accessing the settings for your account. If you close your account, we will retain certain information associated with your account for analytical purposes and recordkeeping integrity, as well as to prevent fraud, enforce our Terms of Service, take actions we deem necessary to protect the integrity of our Service or our users, or take other actions otherwise permitted or required by law. Additionally, any information already provided to third parties as described in this Policy will be subject to those third parties’ policies.
+You may choose not to provide us with certain information, which may result in your inability to use certain features of our Service because such information is required to either register as a user or access certain functions.
+Our Service may deliver notifications to your mobile device. You can disable these notifications either in the settings in the app or by changing the notification preferences on your mobile device.\n\n
+III.HOW WE PROTECT INFORMATION \n\n
+We implement security measures designed to protect your information from unauthorized access and disclosure.  Your account is protected by your account password and/or authenticated mobile or Facebook login, and we urge you to take steps to keep your personal information safe by not disclosing your password.  We further protect your information from potential security breaches by implementing certain technological security measures including encryption, firewalls and secure socket layer technology.  However, these measures do not guarantee that your information will not be accessed, disclosed, altered or destroyed by breach of such firewalls and secure server software.  By using our Service, you acknowledge that you understand and agree to assume these risks. You should also exercise care with how you handle and disclose your personal information while using our Service, and avoid sending personal information through insecure email.
+Children’s Privacy \n\n
+Ashore is intended for use by a general audience. However, we restrict the use of our Service to individuals age 13 and above. We do not knowingly collect, maintain, or use personal information from children under the age of 13.
+Visitors from Outside the United States \n\n
+If you are visiting or using our Service from outside the United States, you should be aware that your information may be transferred to, stored, and processed in the United States where our servers are located and our central database is operated. By using our services, you understand and agree that your information may be transferred to our facilities and those third parties with whom we share in as described in this Policy.\n\n
+IV. YOUR RIGHTS REGARDING THE USE OF YOUR PERSONAL INFORMATION \n\n
+You have the right at any time to prevent us from contacting you for marketing purposes by following the unsubscribe instructions provided in each promotional e-mail.   Please note that notwithstanding the promotional preferences you indicate by unsubscribing, we may continue to send you administrative emails including, for example, periodic updates to our Privacy Policy. \n\n
+V.NO RIGHTS OF THIRD PARTIES \n\n
+This Privacy Policy does not create rights enforceable by third parties or require disclosure of any personal information relating to users of the website. \n\n
+VI.CHANGES TO OUR PRIVACY POLICY \n\n
+The Company reserves the right to change this policy and our Terms of Service at any time.  We will revise the “last updated” date at the top of this Privacy Policy any time we post changes. Unless otherwise indicated, posted changes will take effect immediately. We recommend you check our Service from time to time to keep yourself informed of any changes to this or any of our other policies.\n\n
+VII.CONTACT US \n\n
+If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to info@trutekcorp.com
+Last Updated: This Privacy Policy was last updated on February 24, 2017.\n\n
+</string>
+
+    <string name="sender_id">1092026061818</string>
+
+
+</resources>

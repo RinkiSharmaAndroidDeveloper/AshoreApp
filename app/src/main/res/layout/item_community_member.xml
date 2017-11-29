@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/value_one_hundred_thirty"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/value_ten">
+
+    <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+        android:layout_width="@dimen/value_one_hundred_twenty"
+        android:layout_height="@dimen/value_one_hundred_twenty"
+        android:id="@+id/image_view_member"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:mask="@drawable/border_rounded_image_member"
+        android:src="@drawable/default_placeholder"/>
+
+    <TextView
+        android:id="@+id/txtRec"
+        android:textSize="@dimen/text_size_member_name"
+        android:layout_marginTop="@dimen/value_five"
+        android:layout_width="@dimen/value_sixty"
+        android:layout_height="wrap_content"
+        android:textColor="@color/community_description"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:text="name"/>
+
+</LinearLayout>

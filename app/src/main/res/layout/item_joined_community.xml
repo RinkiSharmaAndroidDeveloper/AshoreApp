@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/value_ten"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:id="@+id/item_joined_community_imageView_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_placeholder"
+            app:mask="@drawable/border_white_background" />
+
+        <Button
+            android:layout_width="@dimen/value_thirty"
+            android:layout_height="@dimen/value_twenty"
+            android:layout_gravity="end"
+            android:id="@+id/joined_community_count_button_text"
+            android:text="150"
+            android:layout_marginTop="@dimen/value_five"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+            android:textColor="@color/color_white"
+            android:background="@drawable/connection_count_background"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_joined_community_imageView_image" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_joined_community_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/text_sender_name"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_joined_community_textView_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_five"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/text_community"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

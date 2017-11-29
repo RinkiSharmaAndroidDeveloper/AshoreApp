@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_main"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_ten"
+        android:orientation="horizontal">
+
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:layout_marginLeft="@dimen/value_ten"
+            android:id="@+id/profile_pic_icon"
+            android:layout_width="@dimen/value_fifty"
+            android:layout_height="@dimen/value_fifty"
+            android:scaleType="centerCrop"
+            app:mask="@drawable/image_mask"
+            android:background="@drawable/border_rounded_corner_image"
+            android:src="@drawable/default_profile_icon" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="@dimen/value_one_hundred_seventy"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:textSize="@dimen/value_fifteen"
+            android:id="@+id/textView_title"
+            android:textColor="@color/color_black"
+            android:text="Let's Rock"/>
+            <TextView
+                android:layout_width="@dimen/value_one_hundred_eighty"
+                android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/value_fifteen"
+                android:textSize="@dimen/value_fifteen"
+                android:id="@+id/textView_commment"
+                android:layout_marginTop="@dimen/value_two"
+                android:textColor="@color/dark_gray"
+                android:text="Let's Rock"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_dark"
+            android:text="13-Feb-2017"
+            android:id="@+id/textView_data"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:textSize="@dimen/value_fifteen"/>
+        <ImageView
+            android:layout_width="@dimen/value_twenty"
+            android:layout_height="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_fifteen"
+            android:src="@mipmap/starred_yellow_icon"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+        android:layout_marginStart="@dimen/value_fifteen"
+        android:textSize="@dimen/value_fifteen"
+        android:id="@+id/textView_name"
+       android:layout_marginTop="@dimen/value_five"
+        android:text="Rinki"/>
+    <View
+        android:layout_marginTop="@dimen/value_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/layout_main" />
+
+</LinearLayout>

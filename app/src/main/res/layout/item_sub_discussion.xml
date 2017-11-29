@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        android:layout_marginStart="@dimen/value_ten"
+        android:layout_marginEnd="@dimen/value_ten"
+        android:layout_marginTop="@dimen/value_ten"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_five"
+        android:orientation="horizontal">
+
+
+        <com.trutek.looped.msas.common.views.maskedimageview.MaskedImageView
+            android:src="@drawable/default_placeholder"
+            android:id="@+id/item_sub_discussion_imageView_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:mask="@drawable/rounded_corner_discussion"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_discussion_linearLayout_info"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:layout_marginTop="@dimen/value_ten"
+                android:baselineAligned="false"
+                >
+
+                <TextView
+                    android:id="@+id/item_sub_discussion_textView_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_user_name"
+                    android:textSize="@dimen/text_header"
+                    android:maxLines="1"
+                    android:textColor="@color/chat_header_color"
+                    android:layout_toStartOf="@+id/item_sub_discussion_textView_time"
+                    android:layout_marginEnd="@dimen/value_ten"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/item_sub_discussion_textView_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:35 PM"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/value_ten"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:contentDescription="@string/image_description"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/value_twenty"
+                    android:id="@+id/discussion_activity_select_starred_message"
+                    android:src="@mipmap/star_icon"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_sub_discussion_textView_message"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/text_size_secondary"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_fifty"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value_fifteen"
+            android:id="@+id/starred_back"
+            android:src="@mipmap/right_arrow_toolbar"
+            />
+
+        <TextView
+            android:id="@+id/interest_textView_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="Contact Us"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_header" />
+        <TextView
+            android:id="@+id/contact_textView_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right|center"
+            android:text="Done"
+            android:layout_marginEnd="@dimen/value_twenty"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_header"
+            android:layout_alignTop="@+id/interest_textView_categoryName"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/value_twenty"
+        android:layout_margin="@dimen/value_twenty"
+        android:text="Tell us what happened:"
+        android:textColor="@color/theme_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/value_ten"
+        android:gravity="start"
+        android:background="@drawable/border_edit_search_text"
+        android:id="@+id/cotact_us_editText"
+        android:layout_marginStart="@dimen/value_twenty"
+        android:layout_marginEnd="@dimen/value_twenty"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/value_twenty" />
+
+</LinearLayout>
+
